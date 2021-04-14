@@ -169,3 +169,74 @@
 2021-04-14 13:09:50,712 - RequestsHandler - DEBUG - Loading data from file: ./cache/Janna_aram_stats.pickle
 2021-04-14 13:09:50,913 - RequestsHandler - DEBUG - Loading data from file: ./cache/Janna_aram_stats.pickle
 2021-04-14 13:09:51,093 - RequestsHandler - DEBUG - Loading data from file: ./cache/Jarvan IV_aram_stats.pickle
+2021-04-14 14:25:56,612 - RequestsHandler - DEBUG - Loading data from file: ./cache/main_statistc_page.pickle
+2021-04-14 14:25:56,991 - RequestsHandler - DEBUG - Loading data from file: ./cache/Aatrox_Top_stats.pickle
+2021-04-14 14:26:08,464 - RequestsHandler - DEBUG - Loading data from file: ./cache/main_statistc_page.pickle
+2021-04-14 14:26:08,691 - RequestsHandler - DEBUG - Loading data from file: ./cache/Aatrox_Top_stats.pickle
+2021-04-14 14:26:27,452 - RequestsHandler - DEBUG - Loading data from file: ./cache/main_statistc_page.pickle
+2021-04-14 14:26:27,775 - RequestsHandler - DEBUG - Loading data from file: ./cache/Aatrox_Top_stats.pickle
+2021-04-14 14:28:47,736 - RequestsHandler - DEBUG - Loading data from file: ./cache/main_statistc_page.pickle
+2021-04-14 14:28:47,956 - RequestsHandler - DEBUG - Loading data from file: ./cache/Aatrox_Top_stats.pickle
+2021-04-14 14:28:50,478 - RequestsHandler - DEBUG - Loading data from file: ./cache/Ahri_Middle_stats.pickle
+2021-04-14 14:28:50,591 - RequestsHandler - DEBUG - Loading data from file: ./cache/Aphelios_Bottom_stats.pickle
+2021-04-14 14:28:50,814 - RequestsHandler - DEBUG - Loading data from file: ./cache/Aphelios_Bottom_stats.pickle
+2021-04-14 14:28:56,210 - RequestsHandler - DEBUG - Loading data from file: ./cache/main_statistc_page.pickle
+2021-04-14 14:28:56,433 - RequestsHandler - DEBUG - Loading data from file: ./cache/Aatrox_Top_stats.pickle
+2021-04-14 14:28:58,423 - RequestsHandler - DEBUG - Loading data from file: ./cache/Ahri_Middle_stats.pickle
+2021-04-14 14:28:58,617 - RequestsHandler - DEBUG - Loading data from file: ./cache/Aphelios_Bottom_stats.pickle
+2021-04-14 14:28:59,524 - RequestsHandler - DEBUG - Loading data from file: ./cache/Aphelios_Bottom_stats.pickle
+2021-04-14 14:29:00,750 - RequestsHandler - DEBUG - Loading data from file: ./cache/Aphelios_Bottom_stats.pickle
+2021-04-14 14:29:00,947 - RequestsHandler - DEBUG - Loading data from file: ./cache/Aphelios_Bottom_stats.pickle
+2021-04-14 14:29:01,136 - RequestsHandler - DEBUG - Loading data from file: ./cache/Ahri_Middle_stats.pickle
+2021-04-14 14:29:01,304 - RequestsHandler - DEBUG - Loading data from file: ./cache/Aatrox_Top_stats.pickle
+2021-04-14 14:29:01,765 - RequestsHandler - DEBUG - Loading data from file: ./cache/Ahri_Middle_stats.pickle
+2021-04-14 14:29:01,879 - RequestsHandler - DEBUG - Loading data from file: ./cache/Kha'Zix_Jungle_stats.pickle
+2021-04-14 14:29:02,807 - RequestsHandler - DEBUG - Loading data from file: ./cache/Kha'Zix_Jungle_stats.pickle
+2021-04-14 14:29:03,004 - RequestsHandler - DEBUG - Loading data from file: ./cache/Ahri_Middle_stats.pickle
+2021-04-14 14:29:03,200 - RequestsHandler - DEBUG - Loading data from file: ./cache/Aatrox_Top_stats.pickle
+2021-04-14 14:29:03,982 - RequestsHandler - DEBUG - Loading data from file: ./cache/Blitzcrank_Support_stats.pickle
+2021-04-14 14:29:04,210 - RequestsHandler - DEBUG - Loading data from file: ./cache/Caitlyn_Bottom_stats.pickle
+2021-04-14 14:29:05,711 - RequestsHandler - DEBUG - sending request...
+2021-04-14 14:29:06,878 - RequestsHandler - DEBUG - Downloaded data from: https://euw.op.gg/champion/camille/statistics/Top
+2021-04-14 14:29:06,878 - RequestsHandler - DEBUG - Response status: <Response [200]>
+2021-04-14 14:29:07,008 - RequestsHandler - DEBUG - Loading data from file: ./cache/Camille_Top_stats.pickle
+2021-04-14 14:29:44,601 - RequestsHandler - DEBUG - Loading data from file: ./cache/main_statistc_page.pickle
+2021-04-14 14:29:44,852 - RequestsHandler - DEBUG - Loading data from file: ./cache/Aatrox_Top_stats.pickle
+2021-04-14 14:30:54,510 - RequestsHandler - DEBUG - Loading data from file: ./cache/main_statistc_page.pickle
+2021-04-14 14:30:54,747 - RequestsHandler - DEBUG - Loading data from file: ./cache/Aatrox_Top_stats.pickle
+2021-04-14 14:31:13,834 - RequestsHandler - DEBUG - Loading data from file: ./cache/main_statistc_page.pickle
+2021-04-14 14:31:14,082 - RequestsHandler - DEBUG - Loading data from file: ./cache/Aatrox_Top_stats.pickle
+2021-04-14 15:05:52,801 - RequestsHandler - DEBUG - Loading data from file: ./cache/main_statistc_page.pickle
+2021-04-14 15:05:53,047 - RequestsHandler - DEBUG - Loading data from file: ./cache/Aatrox_Top_stats.pickle
+2021-04-14 15:06:41,823 - RequestsHandler - DEBUG - Loading data from file: ./cache/main_statistc_page.pickle
+2021-04-14 15:06:42,139 - RequestsHandler - DEBUG - Loading data from file: ./cache/Aatrox_Top_stats.pickle
+2021-04-14 15:07:03,332 - RequestsHandler - DEBUG - Loading data from file: ./cache/main_statistc_page.pickle
+2021-04-14 15:07:03,571 - RequestsHandler - DEBUG - Loading data from file: ./cache/Aatrox_Top_stats.pickle
+2021-04-14 15:07:57,725 - RequestsHandler - DEBUG - Loading data from file: ./cache/main_statistc_page.pickle
+2021-04-14 15:07:58,021 - RequestsHandler - DEBUG - Loading data from file: ./cache/Aatrox_Top_stats.pickle
+2021-04-14 15:08:00,953 - RequestsHandler - DEBUG - Loading data from file: ./cache/Aatrox_Top_stats.pickle
+2021-04-14 15:08:02,263 - RequestsHandler - DEBUG - Loading data from file: ./cache/Ahri_Middle_stats.pickle
+2021-04-14 15:08:20,749 - RequestsHandler - DEBUG - Loading data from file: ./cache/main_statistc_page.pickle
+2021-04-14 15:08:20,974 - RequestsHandler - DEBUG - Loading data from file: ./cache/Aatrox_Top_stats.pickle
+2021-04-14 15:08:39,306 - RequestsHandler - DEBUG - Loading data from file: ./cache/Brand_Support_stats.pickle
+2021-04-14 15:08:47,486 - RequestsHandler - DEBUG - sending request...
+2021-04-14 15:08:48,617 - RequestsHandler - DEBUG - Downloaded data from: https://euw.op.gg/champion/leona/statistics/Support
+2021-04-14 15:08:48,617 - RequestsHandler - DEBUG - Response status: <Response [200]>
+2021-04-14 15:08:48,746 - RequestsHandler - DEBUG - Loading data from file: ./cache/Leona_Support_stats.pickle
+2021-04-14 15:08:50,919 - RequestsHandler - DEBUG - Loading data from file: ./cache/Leona_Support_stats.pickle
+2021-04-14 15:08:55,991 - RequestsHandler - DEBUG - Loading data from file: ./cache/Leona_Support_stats.pickle
+2021-04-14 15:09:02,168 - RequestsHandler - DEBUG - Loading data from file: ./cache/Poppy_Top_stats.pickle
+2021-04-14 15:09:05,482 - RequestsHandler - DEBUG - Loading data from file: ./cache/Cassiopeia_Middle_stats.pickle
+2021-04-14 15:09:06,144 - RequestsHandler - DEBUG - Loading data from file: ./cache/Poppy_Top_stats.pickle
+2021-04-14 15:09:08,492 - RequestsHandler - DEBUG - Loading data from file: ./cache/Poppy_aram_stats.pickle
+2021-04-14 15:09:10,054 - RequestsHandler - DEBUG - sending request...
+2021-04-14 15:09:10,872 - RequestsHandler - DEBUG - Downloaded data from: https://euw.op.gg/aram/Cassiopeia/statistics
+2021-04-14 15:09:10,872 - RequestsHandler - DEBUG - Response status: <Response [200]>
+2021-04-14 15:09:12,909 - RequestsHandler - DEBUG - Loading data from file: ./cache/Poppy_aram_stats.pickle
+2021-04-14 15:09:14,882 - RequestsHandler - DEBUG - Loading data from file: ./cache/Poppy_Top_stats.pickle
+2021-04-14 15:09:16,279 - RequestsHandler - DEBUG - Loading data from file: ./cache/Cassiopeia_Middle_stats.pickle
+2021-04-14 15:09:17,601 - RequestsHandler - DEBUG - sending request...
+2021-04-14 15:09:19,125 - RequestsHandler - DEBUG - Downloaded data from: https://euw.op.gg/champion/cassiopeia/statistics/Top
+2021-04-14 15:09:19,125 - RequestsHandler - DEBUG - Response status: <Response [200]>
+2021-04-14 15:13:32,511 - RequestsHandler - DEBUG - Loading data from file: ./cache/main_statistc_page.pickle
+2021-04-14 15:13:32,733 - RequestsHandler - DEBUG - Loading data from file: ./cache/Aatrox_Top_stats.pickle
