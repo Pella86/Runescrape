@@ -37,9 +37,12 @@ class StoneFrame:
             
         # if the picture was already modified it loads it from the ./image 
         # folder
-        if pathlib.Path(img_file_mod):
+        if pathlib.Path(img_file_mod).is_file():
             img = PIL.Image.open(img_file_mod)
         else:
+            
+            img = PIL.Image.open(stone.img_file)
+            
             # resize the image
             img = img.resize((img_size,img_size), PIL.Image.ANTIALIAS) 
             
@@ -226,11 +229,29 @@ class App:
         self.position_frame.grid(row=1, column=0)
         
         self.role_idx = tkinter.IntVar()
+
+        self.rune_set_idx = tkinter.IntVar()
+        self.rune_set_idx.set(0) 
         
+        rune_set_index_frame = tkinter.Frame(self.runes_info_frame)
+        rune_set_index_frame.grid(row=2, column=0)
+        
+        for i in range(4):
+            rb = tkinter.Radiobutton(rune_set_index_frame, 
+               text=str(i), 
+               variable=self.rune_set_idx, 
+               command=lambda : self.roles_button(),
+               value=i)
+            rb.grid(row=0, column=i)          
+
         
         # frame containing the stones
         self.rune_set_frame = tkinter.Frame(self.runes_info_frame)
         self.rune_set_frame.grid(row = 2, column=0)
+        
+
+        
+    
 
         # default champion
         champion = self.champions_list["Aatrox"]
@@ -251,6 +272,8 @@ class App:
         self.position_frame = tkinter.Frame(self.runes_info_frame)
         self.position_frame.grid(row=1, column=0)
 
+  
+
         # roles        
         for i, role in enumerate(champion.roles):
             rb = tkinter.Radiobutton(self.position_frame, 
@@ -259,6 +282,10 @@ class App:
                command=lambda : self.roles_button(),
                value=i)
             rb.grid(row=0, column=i)
+            
+        
+
+    
         
         cp = ChampionPage.ChampionPage(champion, champion.roles[self.role_idx.get()], self.aram_var.get())  
         
@@ -319,10 +346,12 @@ class App:
         self.rune_set_frame.destroy()
         
         self.rune_set_frame = tkinter.Frame(self.runes_info_frame)
-        self.rune_set_frame.grid(row = 2, column=0)
+        self.rune_set_frame.grid(row = 3, column=0)
+        
+        idx = self.rune_set_idx.get()
         
         
-        rune_set = champion_page.get_runes_set(0)
+        rune_set = champion_page.get_runes_set(idx)
 
         rg1, rg2, rg3 = rune_set.get_groups()
         
