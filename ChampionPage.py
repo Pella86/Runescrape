@@ -25,30 +25,6 @@ class Stone:
         
         return self.img_file + ", " + str(self.active) 
 
-# Class that represent the 3 runes groups (e.g. precision, domination, 3 dots)
-class RunesSet:
-    
-    def __init__(self, rune_table):
-        # gets the tables containg the runes
-        self.rune_table = rune_table
-        
-        #self.rune_groups = self.table.find_all("tr", recursive = False)
-
-    def get_runes(self):
-        # gets the runes rows
-        runes =  self.rune_table.find_all("div", {"class" : "perk-page__row"})
-        runes += self.rune_table.find_all("div", {"class" : "fragment__row"})
-        return runes
-    
-    def get_groups(self):
-        stones = self.get_runes()
-        
-        rg1 = RuneGroup(stones[0], stones[1:5])
-        rg2 = RuneGroup(stones[5], stones[6:9])
-        rg3 = RuneGroup(None, stones[9:12])
-        return [rg1, rg2, rg3]
-
-    
 
 # Class that represent a rune row
 class StoneRow:
@@ -123,7 +99,30 @@ class RuneGroup:
         
         for row in in_stone_rows:
             self.stone_rows.append(StoneRow(row))
+
+
+# Class that represent the 3 runes groups (e.g. precision, domination, 3 dots)
+class RunesSet:
     
+    def __init__(self, rune_table):
+        # gets the tables containg the runes
+        self.rune_table = rune_table
+        
+        #self.rune_groups = self.table.find_all("tr", recursive = False)
+
+    def get_runes(self):
+        # gets the runes rows
+        runes =  self.rune_table.find_all("div", {"class" : "perk-page__row"})
+        runes += self.rune_table.find_all("div", {"class" : "fragment__row"})
+        return runes
+    
+    def get_groups(self):
+        stones = self.get_runes()
+        
+        rg1 = RuneGroup(stones[0], stones[1:5])
+        rg2 = RuneGroup(stones[5], stones[6:9])
+        rg3 = RuneGroup(None, stones[9:12])
+        return [rg1, rg2, rg3]    
 
 
 class ChampionPage:

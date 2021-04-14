@@ -238,11 +238,7 @@ class App:
         self.show_options(champion)
         
         self.current_champion = champion
-        
-        
-        # cp = ChampionPage.ChampionPage(champion, champion.roles[0])        
-        
-        # self.show_runes(cp)
+
         
     def update_list_box(self, champion_list):
         pass
@@ -254,8 +250,6 @@ class App:
 
         self.position_frame = tkinter.Frame(self.runes_info_frame)
         self.position_frame.grid(row=1, column=0)
-        
-        
 
         # roles        
         for i, role in enumerate(champion.roles):
@@ -265,9 +259,6 @@ class App:
                command=lambda : self.roles_button(),
                value=i)
             rb.grid(row=0, column=i)
-            
-            
-        print("role selected:", champion.roles[self.role_idx.get()])
         
         cp = ChampionPage.ChampionPage(champion, champion.roles[self.role_idx.get()], self.aram_var.get())  
         
@@ -277,19 +268,15 @@ class App:
         
     
     def roles_button(self):
-        
+        # triggered by fiddling with Aram/rift or position
         self.show_options(self.current_champion)
-        
-        
-        
-        
+
     def champ_selection(self, event):
         selection = event.widget.curselection()
         if selection:
             index = selection[0]
             name = event.widget.get(index)
-            
-            
+
             self.show_runes_name(name)
             
             
@@ -304,10 +291,7 @@ class App:
             self.role_idx.set(0)
             
             self.show_options(champion)
-            
-            # cp = ChampionPage.ChampionPage(champion, champion.roles[0])
-            
-            # self.show_runes(cp)        
+               
     
     def update_runes_trace(self, var_name, idk, mode):
         user_input = self.input_trace.get()
@@ -315,17 +299,13 @@ class App:
         
         self.name_list_box.update_names(selection_list)
         
-        # # empty the list
-        # self.name_list_box.delete(0, tkinter.END)
-        
-        # for i, name in enumerate(selection_list):
-        #     self.name_list_box.insert(i, name)
-            
-        # if selection_list:
-        #     self.name_list_box.selection_set(0)
-        #     self.show_runes_name(selection_list[0])    
+        if selection_list:
+            if len(user_input) >= 2:
+                champion = self.champions_list[selection_list[0]]
+                self.show_options(champion)
     
     def match_champion(self, user_input):
+        # function that filters the list
         selection_list =[]
         
         for champion_name in self.champions_list:
@@ -333,24 +313,6 @@ class App:
                 selection_list.append(champion_name)  
         
         return selection_list
-
-        
-    def update_runes(self):
-        user_input = self.name_entry.get()
-        
-        selection_list = self.match_champion(user_input)
-        
-        self.name_list_box.update_names(selection_list)
-        
-        # # empty the list
-        # self.name_list_box.delete(0, tkinter.END)
-        
-        # for i, name in enumerate(selection_list):
-        #     self.name_list_box.insert(i, name)
-            
-        # if selection_list:
-        #     self.name_list_box.selection_set(0)
-        #     self.show_runes_name(selection_list[0])
 
         
     def show_runes(self, champion_page):
@@ -361,7 +323,6 @@ class App:
         
         
         rune_set = champion_page.get_runes_set(0)
-        print("rune set available:", len(champion_page.runes_sets))
 
         rg1, rg2, rg3 = rune_set.get_groups()
         
@@ -384,79 +345,9 @@ cl = ChampionList.ChampionsList()
 
 champions_list = cl.parse_champions()
 
-# champion = champions_list["Sivir"]
-
-# cp = ChampionPage.ChampionPage(champion, champion.roles[0])
-
-# for champion in champions_list:
-    
-#     if champion.name == "Sivir":
-#         cp = ChampionPage.ChampionPage(champion, champion.roles[0])
-        
-#cp = ChampionPage.ChampionPage(champions_list[0], champions_list[0].roles[0])
-
-
-
-
 App(root, champions_list)
 
 root.mainloop()
         
         
         
-
-
-# main_frame = tkinter.Frame(root)
-# main_frame.pack()
-
-
-# keyrune_frame = tkinter.Frame(main_frame)
-# keyrune_frame.grid(row=0,column=0)
-
-# keyrunestone_frame = tkinter.Frame(keyrune_frame)
-# keyrunestone_frame.grid(row=0, column=0)
-
-
-# keyrune_image = tkinter.PhotoImage(file=cp.rune_list_1.keystone.get_stone().img_file)
-
-
-# keyrune_label = tkinter.Label(keyrunestone_frame, image=keyrune_image)
-# keyrune_label.pack()
-
-
-
-
-
-# for j, row in enumerate(cp.rune_list_1.stone_rows):
-#     stonerow_frame = tkinter.Frame(keyrune_frame)
-#     stonerow_frame.grid(row=j + 1, column=0)
-    
-#     for i, stone in enumerate(row.get_stones()):
-#         print(i)
-#         print(stone.img_file)
-    
-#         stone_frame = tkinter.Frame(stonerow_frame)
-#         stone_frame.grid(row=0, column=i)
-        
-#         img = PIL.Image.open(stone.img_file)
-        
-#         img = img.resize((50,50), PIL.Image.ANTIALIAS)
-        
-#         print(stone.active)
-#         if not stone.active:
-#             #img = ImOps.grayscale(img)
-#             img = img.convert("LA")
-            
-            
-    
-#         stone_image = itk.PhotoImage(img)
-    
-    
-#         stone_label = tkinter.Label(stone_frame, image=stone_image)
-#         stone_label.image = stone_image
-#         stone_label.pack()
-        
-#         root.update()
-
-
-# root.mainloop()
