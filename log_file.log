@@ -1,42 +1,152 @@
-2021-04-14 17:33:34,560 - RequestsHandler - DEBUG - Loading data from file: ./cache/main_statistc_page.pickle
-2021-04-14 17:33:34,784 - RequestsHandler - DEBUG - Loading data from file: ./cache/Aatrox_Top_stats.pickle
-2021-04-14 17:33:40,618 - RequestsHandler - DEBUG - Loading data from file: ./cache/Aatrox_Top_stats.pickle
-2021-04-14 17:33:41,487 - RequestsHandler - DEBUG - Loading data from file: ./cache/Aatrox_Top_stats.pickle
-2021-04-14 17:33:42,214 - RequestsHandler - DEBUG - Loading data from file: ./cache/Aatrox_Top_stats.pickle
-2021-04-14 17:33:43,045 - RequestsHandler - DEBUG - Loading data from file: ./cache/Aatrox_Top_stats.pickle
-2021-04-14 17:33:43,360 - RequestsHandler - DEBUG - Loading data from file: ./cache/Aatrox_Top_stats.pickle
-2021-04-14 17:36:20,612 - RequestsHandler - DEBUG - Loading data from file: ./cache/main_statistc_page.pickle
-2021-04-14 17:36:20,835 - RequestsHandler - DEBUG - Loading data from file: ./cache/Aatrox_Top_stats.pickle
-2021-04-14 17:36:24,522 - RequestsHandler - DEBUG - Loading data from file: ./cache/Aatrox_Top_stats.pickle
-2021-04-14 17:36:25,115 - RequestsHandler - DEBUG - Loading data from file: ./cache/Aatrox_Top_stats.pickle
-2021-04-14 17:36:25,712 - RequestsHandler - DEBUG - Loading data from file: ./cache/Aatrox_Top_stats.pickle
-2021-04-14 17:36:55,081 - RequestsHandler - DEBUG - Loading data from file: ./cache/main_statistc_page.pickle
-2021-04-14 17:36:55,298 - RequestsHandler - DEBUG - Loading data from file: ./cache/Aatrox_Top_stats.pickle
-2021-04-14 17:36:57,049 - RequestsHandler - DEBUG - Loading data from file: ./cache/Aatrox_Top_stats.pickle
-2021-04-14 17:37:01,366 - RequestsHandler - DEBUG - Loading data from file: ./cache/Aatrox_Top_stats.pickle
-2021-04-14 17:37:02,702 - RequestsHandler - DEBUG - Loading data from file: ./cache/Aatrox_Top_stats.pickle
-2021-04-14 17:37:03,809 - RequestsHandler - DEBUG - Loading data from file: ./cache/Aatrox_Top_stats.pickle
-2021-04-14 17:37:51,387 - RequestsHandler - DEBUG - Loading data from file: ./cache/main_statistc_page.pickle
-2021-04-14 17:37:51,613 - RequestsHandler - DEBUG - Loading data from file: ./cache/Aatrox_Top_stats.pickle
-2021-04-14 17:37:53,453 - RequestsHandler - DEBUG - Loading data from file: ./cache/Aatrox_Top_stats.pickle
-2021-04-14 17:38:23,480 - RequestsHandler - DEBUG - Loading data from file: ./cache/main_statistc_page.pickle
-2021-04-14 17:38:23,776 - RequestsHandler - DEBUG - Loading data from file: ./cache/Aatrox_Top_stats.pickle
-2021-04-14 17:38:25,859 - RequestsHandler - DEBUG - Loading data from file: ./cache/Aatrox_Top_stats.pickle
-2021-04-14 17:38:27,013 - RequestsHandler - DEBUG - Loading data from file: ./cache/Aatrox_Top_stats.pickle
-2021-04-14 17:38:28,243 - RequestsHandler - DEBUG - Loading data from file: ./cache/Aatrox_Top_stats.pickle
-2021-04-14 17:38:30,448 - RequestsHandler - DEBUG - Loading data from file: ./cache/Aatrox_Top_stats.pickle
-2021-04-14 17:38:31,242 - RequestsHandler - DEBUG - Loading data from file: ./cache/Aatrox_Top_stats.pickle
-2021-04-14 17:46:12,031 - RequestsHandler - DEBUG - Loading data from file: ./cache/Poppy_Top_stats.pickle
-2021-04-14 17:46:12,176 - RequestsHandler - DEBUG - Loading data from file: ./cache/Poppy_Top_stats.pickle
-2021-04-14 17:46:12,292 - RequestsHandler - DEBUG - Loading data from file: ./cache/Poppy_Top_stats.pickle
-2021-04-14 17:46:12,472 - RequestsHandler - DEBUG - Loading data from file: ./cache/Poppy_Top_stats.pickle
-2021-04-14 17:46:15,060 - RequestsHandler - DEBUG - Loading data from file: ./cache/Aatrox_Top_stats.pickle
-2021-04-14 17:46:16,893 - RequestsHandler - DEBUG - Loading data from file: ./cache/Aatrox_Top_stats.pickle
-2021-04-14 17:46:18,265 - RequestsHandler - DEBUG - Loading data from file: ./cache/Aatrox_Top_stats.pickle
-2021-04-14 17:46:18,937 - RequestsHandler - DEBUG - Loading data from file: ./cache/Aatrox_Top_stats.pickle
-2021-04-14 17:46:20,645 - RequestsHandler - DEBUG - Loading data from file: ./cache/Aatrox_Top_stats.pickle
-2021-04-14 17:46:21,982 - RequestsHandler - DEBUG - Loading data from file: ./cache/Aatrox_Top_stats.pickle
-2021-04-14 17:46:23,593 - RequestsHandler - DEBUG - Loading data from file: ./cache/Aatrox_aram_stats.pickle
-2021-04-14 17:46:24,583 - RequestsHandler - DEBUG - Loading data from file: ./cache/Aatrox_aram_stats.pickle
-2021-04-14 17:46:25,416 - RequestsHandler - DEBUG - Loading data from file: ./cache/Aatrox_aram_stats.pickle
-2021-04-14 17:46:26,380 - RequestsHandler - DEBUG - Loading data from file: ./cache/Aatrox_aram_stats.pickle
+2021-04-19 11:50:30,786 - RequestsHandler - DEBUG - Loading data from file: ./cache/main_statistc_page.pickle
+2021-04-19 11:50:31,008 - RequestsHandler - DEBUG - Loading data from file: ./cache/Aatrox_Top_stats.pickle
+2021-04-19 11:51:10,826 - RequestsHandler - DEBUG - Loading data from file: ./cache/main_statistc_page.pickle
+2021-04-19 11:51:11,095 - RequestsHandler - DEBUG - Loading data from file: ./cache/Aatrox_Top_stats.pickle
+2021-04-19 12:55:31,049 - RequestsHandler - DEBUG - Loading data from file: ./cache/main_statistc_page.pickle
+2021-04-19 12:55:31,327 - RequestsHandler - DEBUG - Loading data from file: ./cache/Aatrox_Top_stats.pickle
+2021-04-19 12:56:19,817 - RequestsHandler - DEBUG - sending request...
+2021-04-19 12:56:20,969 - RequestsHandler - DEBUG - Downloaded data from: https://euw.op.gg/champion/xayah/statistics/bot
+2021-04-19 12:56:20,969 - RequestsHandler - DEBUG - Response status: <Response [200]>
+2021-04-19 14:29:18,284 - RequestsHandler - DEBUG - sending request...
+2021-04-19 14:29:19,471 - RequestsHandler - DEBUG - Downloaded data from: https://euw.op.gg/champion/swain/statistics/Support
+2021-04-19 14:29:19,471 - RequestsHandler - DEBUG - Response status: <Response [200]>
+2021-04-19 14:29:19,752 - RequestsHandler - DEBUG - Loading data from file: ./cache/Warwick_Jungle_stats.pickle
+2021-04-19 14:29:24,733 - RequestsHandler - DEBUG - Loading data from file: ./cache/Warwick_Jungle_stats.pickle
+2021-04-19 14:29:25,558 - RequestsHandler - DEBUG - Loading data from file: ./cache/Warwick_aram_stats.pickle
+2021-04-19 14:29:30,668 - RequestsHandler - DEBUG - Loading data from file: ./cache/Warwick_aram_stats.pickle
+2021-04-19 14:48:58,706 - RequestsHandler - DEBUG - Loading data from file: ./cache/Poppy_aram_stats.pickle
+2021-04-19 14:48:58,899 - RequestsHandler - DEBUG - Loading data from file: ./cache/Poppy_aram_stats.pickle
+2021-04-19 14:49:01,739 - RequestsHandler - DEBUG - Loading data from file: ./cache/Poppy_aram_stats.pickle
+2021-04-19 14:49:03,148 - RequestsHandler - DEBUG - Loading data from file: ./cache/Poppy_aram_stats.pickle
+2021-04-19 14:49:04,415 - RequestsHandler - DEBUG - Loading data from file: ./cache/Poppy_Jungle_stats.pickle
+2021-04-19 14:49:04,856 - RequestsHandler - DEBUG - Loading data from file: ./cache/Poppy_Jungle_stats.pickle
+2021-04-19 14:49:13,319 - RequestsHandler - DEBUG - Loading data from file: ./cache/Poppy_Top_stats.pickle
+2021-04-19 14:49:15,659 - RequestsHandler - DEBUG - Loading data from file: ./cache/Poppy_Jungle_stats.pickle
+2021-04-19 14:49:25,112 - RequestsHandler - DEBUG - Loading data from file: ./cache/Poppy_Top_stats.pickle
+2021-04-19 14:49:29,343 - RequestsHandler - DEBUG - Loading data from file: ./cache/Poppy_Top_stats.pickle
+2021-04-19 15:10:30,976 - RequestsHandler - DEBUG - Loading data from file: ./cache/Camille_Top_stats.pickle
+2021-04-19 15:10:31,161 - RequestsHandler - DEBUG - Loading data from file: ./cache/Camille_Top_stats.pickle
+2021-04-19 15:10:33,198 - RequestsHandler - DEBUG - Loading data from file: ./cache/Camille_aram_stats.pickle
+2021-04-19 15:10:35,578 - RequestsHandler - DEBUG - Loading data from file: ./cache/Camille_aram_stats.pickle
+2021-04-19 15:10:57,138 - RequestsHandler - DEBUG - Loading data from file: ./cache/Twisted Fate_aram_stats.pickle
+2021-04-19 15:10:58,413 - RequestsHandler - DEBUG - Loading data from file: ./cache/Twisted Fate_aram_stats.pickle
+2021-04-19 15:10:58,775 - RequestsHandler - DEBUG - Loading data from file: ./cache/Twisted Fate_aram_stats.pickle
+2021-04-19 15:55:34,375 - RequestsHandler - DEBUG - Loading data from file: ./cache/Zoe_aram_stats.pickle
+2021-04-19 15:55:34,551 - RequestsHandler - DEBUG - Loading data from file: ./cache/Zoe_aram_stats.pickle
+2021-04-19 15:55:46,617 - RequestsHandler - DEBUG - Loading data from file: ./cache/Zoe_aram_stats.pickle
+2021-04-19 15:55:48,217 - RequestsHandler - DEBUG - Loading data from file: ./cache/Zoe_aram_stats.pickle
+2021-04-19 15:55:49,659 - RequestsHandler - DEBUG - Loading data from file: ./cache/Zoe_aram_stats.pickle
+2021-04-19 16:23:01,666 - RequestsHandler - DEBUG - Loading data from file: ./cache/Ahri_aram_stats.pickle
+2021-04-19 16:23:02,607 - RequestsHandler - DEBUG - Loading data from file: ./cache/Ashe_aram_stats.pickle
+2021-04-19 16:23:02,821 - RequestsHandler - DEBUG - Loading data from file: ./cache/Ashe_aram_stats.pickle
+2021-04-19 16:23:04,261 - RequestsHandler - DEBUG - Loading data from file: ./cache/Ashe_aram_stats.pickle
+2021-04-19 16:23:04,655 - RequestsHandler - DEBUG - Loading data from file: ./cache/Ashe_aram_stats.pickle
+2021-04-19 16:51:01,432 - RequestsHandler - DEBUG - sending request...
+2021-04-19 16:51:02,552 - RequestsHandler - DEBUG - Downloaded data from: https://euw.op.gg/aram/Ryze/statistics
+2021-04-19 16:51:02,552 - RequestsHandler - DEBUG - Response status: <Response [200]>
+2021-04-19 16:51:02,802 - RequestsHandler - DEBUG - Loading data from file: ./cache/Ryze_aram_stats.pickle
+2021-04-19 16:51:13,757 - RequestsHandler - DEBUG - Loading data from file: ./cache/Twisted Fate_aram_stats.pickle
+2021-04-19 16:51:14,965 - RequestsHandler - DEBUG - Loading data from file: ./cache/Twisted Fate_aram_stats.pickle
+2021-04-19 16:51:15,185 - RequestsHandler - DEBUG - Loading data from file: ./cache/Twitch_aram_stats.pickle
+2021-04-19 16:51:21,039 - RequestsHandler - DEBUG - Loading data from file: ./cache/Twisted Fate_aram_stats.pickle
+2021-04-19 17:30:23,729 - RequestsHandler - DEBUG - sending request...
+2021-04-19 17:30:24,550 - RequestsHandler - DEBUG - Downloaded data from: https://euw.op.gg/aram/Mordekaiser/statistics
+2021-04-19 17:30:24,550 - RequestsHandler - DEBUG - Response status: <Response [200]>
+2021-04-19 17:30:24,788 - RequestsHandler - DEBUG - Loading data from file: ./cache/Mordekaiser_aram_stats.pickle
+2021-04-19 17:30:25,344 - RequestsHandler - DEBUG - Loading data from file: ./cache/Mordekaiser_aram_stats.pickle
+2021-04-19 17:30:27,157 - RequestsHandler - DEBUG - Loading data from file: ./cache/Mordekaiser_aram_stats.pickle
+2021-04-19 17:30:49,040 - RequestsHandler - DEBUG - Loading data from file: ./cache/Ryze_aram_stats.pickle
+2021-04-19 17:30:49,448 - RequestsHandler - DEBUG - Loading data from file: ./cache/Ryze_aram_stats.pickle
+2021-04-19 17:30:49,836 - RequestsHandler - DEBUG - Loading data from file: ./cache/Ryze_aram_stats.pickle
+2021-04-19 18:00:22,751 - RequestsHandler - DEBUG - Loading data from file: ./cache/Karma_aram_stats.pickle
+2021-04-19 18:00:23,380 - RequestsHandler - DEBUG - Loading data from file: ./cache/Maokai_aram_stats.pickle
+2021-04-19 18:00:23,741 - RequestsHandler - DEBUG - Loading data from file: ./cache/Maokai_aram_stats.pickle
+2021-04-19 18:00:25,409 - RequestsHandler - DEBUG - Loading data from file: ./cache/Maokai_aram_stats.pickle
+2021-04-19 18:01:40,660 - RequestsHandler - DEBUG - Loading data from file: ./cache/Camille_aram_stats.pickle
+2021-04-19 18:01:41,057 - RequestsHandler - DEBUG - Loading data from file: ./cache/Camille_aram_stats.pickle
+2021-04-19 18:01:42,298 - RequestsHandler - DEBUG - Loading data from file: ./cache/Illaoi_aram_stats.pickle
+2021-04-19 18:01:44,162 - RequestsHandler - DEBUG - Loading data from file: ./cache/Illaoi_aram_stats.pickle
+2021-04-19 18:24:35,258 - RequestsHandler - DEBUG - Loading data from file: ./cache/Ahri_aram_stats.pickle
+2021-04-19 18:24:35,533 - RequestsHandler - DEBUG - Loading data from file: ./cache/Riven_aram_stats.pickle
+2021-04-19 18:24:38,008 - RequestsHandler - DEBUG - Loading data from file: ./cache/Riven_aram_stats.pickle
+2021-04-19 18:24:49,390 - RequestsHandler - DEBUG - Loading data from file: ./cache/Draven_aram_stats.pickle
+2021-04-19 18:24:51,431 - RequestsHandler - DEBUG - Loading data from file: ./cache/Veigar_aram_stats.pickle
+2021-04-19 19:03:07,635 - RequestsHandler - DEBUG - Loading data from file: ./cache/Poppy_aram_stats.pickle
+2021-04-19 19:03:08,124 - RequestsHandler - DEBUG - Loading data from file: ./cache/Poppy_aram_stats.pickle
+2021-04-19 19:03:09,185 - RequestsHandler - DEBUG - Loading data from file: ./cache/Poppy_aram_stats.pickle
+2021-04-19 19:03:10,458 - RequestsHandler - DEBUG - Loading data from file: ./cache/Poppy_aram_stats.pickle
+2021-04-19 19:03:11,917 - RequestsHandler - DEBUG - Loading data from file: ./cache/Poppy_aram_stats.pickle
+2021-04-19 19:03:12,775 - RequestsHandler - DEBUG - Loading data from file: ./cache/Poppy_Jungle_stats.pickle
+2021-04-19 19:03:13,703 - RequestsHandler - DEBUG - Loading data from file: ./cache/Poppy_Jungle_stats.pickle
+2021-04-19 22:13:35,172 - RequestsHandler - DEBUG - Loading data from file: ./cache/Poppy_aram_stats.pickle
+2021-04-19 22:14:18,988 - RequestsHandler - DEBUG - Loading data from file: ./cache/Jhin_aram_stats.pickle
+2021-04-19 22:14:36,201 - RequestsHandler - DEBUG - Loading data from file: ./cache/Jhin_aram_stats.pickle
+2021-04-20 07:07:12,890 - RequestsHandler - DEBUG - Loading data from file: ./cache/Cho'Gath_aram_stats.pickle
+2021-04-20 07:07:13,444 - RequestsHandler - DEBUG - Loading data from file: ./cache/Cho'Gath_aram_stats.pickle
+2021-04-20 07:07:14,903 - RequestsHandler - DEBUG - Loading data from file: ./cache/Cho'Gath_aram_stats.pickle
+2021-04-20 07:07:16,428 - RequestsHandler - DEBUG - Loading data from file: ./cache/Cho'Gath_aram_stats.pickle
+2021-04-20 07:07:24,903 - RequestsHandler - DEBUG - Loading data from file: ./cache/Cho'Gath_aram_stats.pickle
+2021-04-20 07:30:14,025 - RequestsHandler - DEBUG - Loading data from file: ./cache/Cho'Gath_aram_stats.pickle
+2021-04-20 07:30:16,969 - RequestsHandler - DEBUG - Loading data from file: ./cache/Cho'Gath_aram_stats.pickle
+2021-04-20 07:56:49,495 - RequestsHandler - DEBUG - Loading data from file: ./cache/Akali_aram_stats.pickle
+2021-04-20 07:56:49,869 - RequestsHandler - DEBUG - Loading data from file: ./cache/Akali_aram_stats.pickle
+2021-04-20 07:56:51,659 - RequestsHandler - DEBUG - Loading data from file: ./cache/Alistar_aram_stats.pickle
+2021-04-20 08:21:29,399 - RequestsHandler - DEBUG - sending request...
+2021-04-20 08:21:30,316 - RequestsHandler - DEBUG - Downloaded data from: https://euw.op.gg/aram/Xerath/statistics
+2021-04-20 08:21:30,317 - RequestsHandler - DEBUG - Response status: <Response [200]>
+2021-04-20 08:21:30,802 - RequestsHandler - DEBUG - Loading data from file: ./cache/Xerath_aram_stats.pickle
+2021-04-20 08:21:31,030 - RequestsHandler - DEBUG - Loading data from file: ./cache/Xerath_aram_stats.pickle
+2021-04-20 08:21:32,019 - RequestsHandler - DEBUG - Loading data from file: ./cache/Xerath_aram_stats.pickle
+2021-04-20 08:59:02,210 - RequestsHandler - DEBUG - Loading data from file: ./cache/Ashe_aram_stats.pickle
+2021-04-20 08:59:02,848 - RequestsHandler - DEBUG - Loading data from file: ./cache/Ashe_aram_stats.pickle
+2021-04-20 08:59:03,053 - RequestsHandler - DEBUG - Loading data from file: ./cache/Ashe_aram_stats.pickle
+2021-04-20 08:59:04,122 - RequestsHandler - DEBUG - Loading data from file: ./cache/Ashe_aram_stats.pickle
+2021-04-20 09:30:18,742 - RequestsHandler - DEBUG - Loading data from file: ./cache/Akali_aram_stats.pickle
+2021-04-20 09:30:18,986 - RequestsHandler - DEBUG - sending request...
+2021-04-20 09:30:20,004 - RequestsHandler - DEBUG - Downloaded data from: https://euw.op.gg/aram/Katarina/statistics
+2021-04-20 09:30:20,004 - RequestsHandler - DEBUG - Response status: <Response [200]>
+2021-04-20 09:30:20,341 - RequestsHandler - DEBUG - Loading data from file: ./cache/Katarina_aram_stats.pickle
+2021-04-20 09:30:23,239 - RequestsHandler - DEBUG - Loading data from file: ./cache/Anivia_aram_stats.pickle
+2021-04-20 09:30:23,492 - RequestsHandler - DEBUG - Loading data from file: ./cache/Nidalee_aram_stats.pickle
+2021-04-20 09:30:23,717 - RequestsHandler - DEBUG - Loading data from file: ./cache/Nidalee_aram_stats.pickle
+2021-04-20 09:30:25,385 - RequestsHandler - DEBUG - Loading data from file: ./cache/Nidalee_aram_stats.pickle
+2021-04-20 09:30:28,476 - RequestsHandler - DEBUG - Loading data from file: ./cache/Nidalee_aram_stats.pickle
+2021-04-20 09:31:09,709 - RequestsHandler - DEBUG - Loading data from file: ./cache/Poppy_aram_stats.pickle
+2021-04-20 09:31:09,934 - RequestsHandler - DEBUG - Loading data from file: ./cache/Poppy_aram_stats.pickle
+2021-04-20 09:31:10,208 - RequestsHandler - DEBUG - Loading data from file: ./cache/Poppy_aram_stats.pickle
+2021-04-20 09:55:31,617 - RequestsHandler - DEBUG - Loading data from file: ./cache/Diana_aram_stats.pickle
+2021-04-20 09:55:32,172 - RequestsHandler - DEBUG - sending request...
+2021-04-20 09:55:33,175 - RequestsHandler - DEBUG - Downloaded data from: https://euw.op.gg/aram/Nautilus/statistics
+2021-04-20 09:55:33,176 - RequestsHandler - DEBUG - Response status: <Response [200]>
+2021-04-20 09:55:34,705 - RequestsHandler - DEBUG - Loading data from file: ./cache/Nautilus_aram_stats.pickle
+2021-04-20 09:55:51,224 - RequestsHandler - DEBUG - Loading data from file: ./cache/Nautilus_aram_stats.pickle
+2021-04-20 10:36:01,061 - RequestsHandler - DEBUG - Loading data from file: ./cache/Cho'Gath_aram_stats.pickle
+2021-04-20 10:36:01,315 - RequestsHandler - DEBUG - Loading data from file: ./cache/Cho'Gath_aram_stats.pickle
+2021-04-20 11:06:54,488 - RequestsHandler - DEBUG - Loading data from file: ./cache/Camille_aram_stats.pickle
+2021-04-20 11:06:54,716 - RequestsHandler - DEBUG - sending request...
+2021-04-20 11:06:55,815 - RequestsHandler - DEBUG - Downloaded data from: https://euw.op.gg/aram/Miss%20Fortune/statistics
+2021-04-20 11:06:55,815 - RequestsHandler - DEBUG - Response status: <Response [200]>
+2021-04-20 11:06:56,127 - RequestsHandler - DEBUG - Loading data from file: ./cache/Miss Fortune_aram_stats.pickle
+2021-04-20 11:06:57,558 - RequestsHandler - DEBUG - Loading data from file: ./cache/Miss Fortune_aram_stats.pickle
+2021-04-20 12:20:40,830 - RequestsHandler - DEBUG - Loading data from file: ./cache/Akali_aram_stats.pickle
+2021-04-20 12:20:41,428 - RequestsHandler - DEBUG - Loading data from file: ./cache/Karma_aram_stats.pickle
+2021-04-20 12:20:41,677 - RequestsHandler - DEBUG - Loading data from file: ./cache/Karma_aram_stats.pickle
+2021-04-20 12:20:41,879 - RequestsHandler - DEBUG - Loading data from file: ./cache/Karma_aram_stats.pickle
+2021-04-20 12:20:43,042 - RequestsHandler - DEBUG - Loading data from file: ./cache/Karma_aram_stats.pickle
+2021-04-20 12:20:44,215 - RequestsHandler - DEBUG - Loading data from file: ./cache/Karma_aram_stats.pickle
+2021-04-20 12:20:45,865 - RequestsHandler - DEBUG - Loading data from file: ./cache/Karma_Support_stats.pickle
+2021-04-20 12:20:46,280 - RequestsHandler - DEBUG - Loading data from file: ./cache/Karma_Support_stats.pickle
+2021-04-20 12:21:07,013 - RequestsHandler - DEBUG - Loading data from file: ./cache/Karma_Support_stats.pickle
+2021-04-20 14:42:57,169 - RequestsHandler - DEBUG - Loading data from file: ./cache/main_statistc_page.pickle
+2021-04-20 14:42:57,533 - RequestsHandler - DEBUG - Loading data from file: ./cache/Aatrox_Top_stats.pickle
+2021-04-20 14:43:12,797 - RequestsHandler - DEBUG - Loading data from file: ./cache/Akali_Middle_stats.pickle
+2021-04-20 14:43:13,033 - RequestsHandler - DEBUG - Loading data from file: ./cache/Akali_Middle_stats.pickle
+2021-04-20 14:43:14,809 - RequestsHandler - DEBUG - Loading data from file: ./cache/Akali_aram_stats.pickle
+2021-04-20 14:43:20,747 - RequestsHandler - DEBUG - Loading data from file: ./cache/Alistar_aram_stats.pickle
+2021-04-20 14:43:30,966 - RequestsHandler - DEBUG - sending request...
+2021-04-20 14:43:32,058 - RequestsHandler - DEBUG - Downloaded data from: https://euw.op.gg/aram/Malzahar/statistics
+2021-04-20 14:43:32,058 - RequestsHandler - DEBUG - Response status: <Response [200]>
+2021-04-20 14:43:32,206 - RequestsHandler - DEBUG - sending request...
+2021-04-20 14:43:33,246 - RequestsHandler - DEBUG - Downloaded data from: https://euw.op.gg/aram/Zac/statistics
+2021-04-20 14:43:33,246 - RequestsHandler - DEBUG - Response status: <Response [200]>
+2021-04-20 14:43:36,616 - RequestsHandler - DEBUG - Loading data from file: ./cache/Zac_aram_stats.pickle

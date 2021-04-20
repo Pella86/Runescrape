@@ -15,8 +15,21 @@ import ChampionList
 import ChampionPage
 
 
+def round_pictures(img):
+    # make the outer ring transparent
+    pixdata = img.load()
+    
+    # every pixel outside the radius are now transparent
+    width, height = img.size
+    for x in range(width):
+        for y in range(height):
+            radius = width / 2
+            if (x - radius)**2 + (y - radius)**2 > radius**2:
+                pixdata[x, y] = (255, 255, 255, 0)
+
+
 class StoneFrame:
-    '''Frame that olds a single stone of a rune group'''
+    '''Frame that holds a single stone of a rune group'''
     
     def __init__(self, parent_frame, stone, is_fragment = False):
         
@@ -55,16 +68,8 @@ class StoneFrame:
                 # the alpha channel
                 img = img.convert("RGBA")
                 
-                # make the outer ring transparent
-                pixdata = img.load()
-                
-                # every pixel outside the radius are now transparent
-                width, height = img.size
-                for x in range(width):
-                    for y in range(height):
-                        radius = img_size / 2
-                        if (x - radius)**2 + (y - radius)**2 > radius**2:
-                            pixdata[x, y] = (255, 255, 255, 0)
+                round_pictures(img)
+  
             
             # save the image for later
             img.save(img_file_mod)
@@ -140,7 +145,6 @@ class RuneGroupFrame:
             
         self.main_frame = tkinter.Frame(parent_frame, height=height, width=width)
         self.main_frame.grid_propagate(0)
-        
         
         # if a keystone exists, which for the fragment doesnt, create
         # a keystone frame
@@ -236,13 +240,27 @@ class App:
         rune_set_index_frame = tkinter.Frame(self.runes_info_frame)
         rune_set_index_frame.grid(row=2, column=0)
         
+        
+        
+        self.label_img_list = []
+        
         for i in range(4):
-            rb = tkinter.Radiobutton(rune_set_index_frame, 
+            rb_frame = tkinter.Frame(rune_set_index_frame)
+            rb_frame.grid(row=0, column=i)
+
+            rb = tkinter.Radiobutton(rb_frame, 
                text=str(i), 
                variable=self.rune_set_idx, 
                command=lambda : self.roles_button(),
                value=i)
-            rb.grid(row=0, column=i)          
+            rb.grid(row=0, column=0) 
+            
+            label_img = tkinter.Label(rb_frame)
+            label_img.grid(row=0, column=1)
+            
+            self.label_img_list.append(label_img)
+            
+         
 
         
         # frame containing the stones
@@ -257,8 +275,6 @@ class App:
         champion = self.champions_list["Aatrox"]
         
         self.show_options(champion)
-        
-        self.current_champion = champion
 
         
     def update_list_box(self, champion_list):
@@ -271,7 +287,8 @@ class App:
 
         self.position_frame = tkinter.Frame(self.runes_info_frame)
         self.position_frame.grid(row=1, column=0)
-
+        
+        self.current_champion = champion
   
 
         # roles        
@@ -283,11 +300,47 @@ class App:
                value=i)
             rb.grid(row=0, column=i)
             
-        
-
-    
-        
         cp = ChampionPage.ChampionPage(champion, champion.roles[self.role_idx.get()], self.aram_var.get())  
+        
+        for i, label in enumerate(self.label_img_list):
+            rune_set = cp.get_runes_set(i)
+            
+            rg1, rg2, _ = rune_set.get_groups()
+            
+            
+            # group 1
+            img_file = rg1.keystone.get_stone().img_file
+            
+            img = PIL.Image.open(img_file)
+            
+            img = img.resize((50, 50))
+            
+            img = img.convert("RGBA")
+            
+            round_pictures(img)
+            
+            
+            # group 2
+            img_file = rg2.keystone.get_stone().img_file
+            
+            img2 = PIL.Image.open(img_file)
+            
+            img2 = img2.convert("RGBA")
+            
+            round_pictures(img2)
+            
+            img2 = img2.resize((25, 25))
+            
+            # img2, img1
+            img.paste(img2, (25, 25), img2)
+
+            
+            ref_img = itk.PhotoImage(img)
+            
+            label.image = ref_img
+            
+            label["image"] = ref_img
+            
         
         
         self.show_runes(cp)
@@ -329,6 +382,7 @@ class App:
         if selection_list:
             if len(user_input) >= 2:
                 champion = self.champions_list[selection_list[0]]
+                
                 self.show_options(champion)
     
     def match_champion(self, user_input):
@@ -365,18 +419,20 @@ class App:
         rg_frame.main_frame.grid(row=1, column=0, columnspan=2)              
         
         
-        
-        
-        
-root = tkinter.Tk()
 
-cl = ChampionList.ChampionsList()
+def run_app():
+    root = tkinter.Tk()
+    
+    cl = ChampionList.ChampionsList()
+    
+    champions_list = cl.parse_champions()
+    
+    App(root, champions_list)
+    
+    root.mainloop()
 
-champions_list = cl.parse_champions()
 
-App(root, champions_list)
-
-root.mainloop()
-        
+if __name__ == "__main__":
+    run_app()
         
         
