@@ -5,6 +5,19 @@ Created on Wed Mar 31 18:38:46 2021
 @author: maurop
 """
 
+# =============================================================================
+# TO DO list
+# =============================================================================
+# - button for upload
+#   - show the differences?
+# - scrape abilities
+# - scrape win rates
+# - insert message when there is a not found champion
+# - log shit
+# - last used champions?
+# - sizes?
+
+
 import os
             
 import tkinter
