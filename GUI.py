@@ -164,6 +164,158 @@ class RuneGroupFrame:
                 stone_frame = StoneFrame(stonerow_frame, stone, is_fragment)
                 stone_frame.main_frame.grid(row=0, column=i)
 
+class RoleInfo:
+    ''' Manages the role info button '''
+    
+    def __init__(self, parent_frame):
+        self.main_frame = tkinter.Frame(parent_frame)
+        
+        # holds the role buttons so they can be modified
+        self.roles = []
+        
+        # the selected variable
+        self.role_var = tkinter.IntVar()
+    
+    
+    def add_role(self, role, cb, value, col):
+        # puts a new button in the selected column
+        rb = tkinter.Radiobutton(self.main_frame, 
+           text=role, 
+           variable=self.role_var, 
+           command=cb,
+           value=value)
+        rb.grid(row=0, column=col) 
+        
+        self.roles.append(rb)    
+        
+    def modify_role(self, idx, role):
+        self.roles[idx]["text"] = role
+        
+    
+    def add_roles(self, roles, cb):
+        
+        # remove the excess roles
+        while len(roles) < len(self.roles):
+            self.roles[-1].destroy()
+            del self.roles[-1]
+                
+        # modify the roles, or add a new role if necessary
+        for i, role in enumerate(roles):
+            if len(self.roles) < i:
+                self.modify_role(i, role)
+            else:
+                self.add_role(role, cb, i, i)
+        
+
+class RunesPreveiw:
+
+
+    def __init__(self, parent_frame, cb):
+        self.main_frame = tkinter.Frame(parent_frame)
+        
+        
+        self.rune_set_idx = tkinter.IntVar()
+        
+        self.preview_list = []
+        
+        # create the 4 frames containint a radiobutton and an image
+        for i in range(4):
+            rb_frame = tkinter.Frame(self.main_frame)
+            rb_frame.grid(row=0, column=i)
+
+            rb = tkinter.Radiobutton(rb_frame, 
+               text="", 
+               variable=self.rune_set_idx, 
+               command=cb,
+               value=i)
+            rb.grid(row=0, column=0) 
+            
+            label_img = tkinter.Label(rb_frame)
+            label_img.grid(row=0, column=1)
+            
+            self.preview_list.append(label_img)
+    
+    def update_images(self, champion_page):
+       
+        for i, label in enumerate(self.preview_list):
+            rune_set = champion_page.get_runes_set(i)
+            
+            rg1, rg2, _ = rune_set.get_groups()
+            
+            
+            # group 1
+            img_file = rg1.keystone.get_stone().img_file
+            
+            img = PIL.Image.open(img_file)
+            
+            img = img.resize((50, 50))
+            
+            img = img.convert("RGBA")
+            
+            round_pictures(img)
+            
+            
+            # group 2
+            img_file = rg2.keystone.get_stone().img_file
+            
+            img2 = PIL.Image.open(img_file)
+            
+            img2 = img2.convert("RGBA")
+            
+            round_pictures(img2)
+            
+            img2 = img2.resize((25, 25))
+            
+            # Paste the small rune in the big rune
+            img.paste(img2, (25, 25), img2)
+
+            # put the image on the label
+            ref_img = itk.PhotoImage(img)
+            
+            label.image = ref_img
+            
+            label["image"] = ref_img        
+                                                    
+                                        
+        
+        
+
+              
+class InfoDisplay:
+    
+    def __init__(self, parent_frame, cb_preview):
+        
+        self.main_frame = tkinter.Frame(parent_frame)
+        
+        # Game mode radio buttons
+        game_mode_frame = tkinter.Frame(self.main_frame)
+        game_mode_frame.grid(row=0, column=0)
+
+        self.aram_var = tkinter.IntVar()
+        
+        def create_game_mode_button(text, row, col, val):
+            rb = tkinter.Radiobutton(game_mode_frame, 
+               text=text, 
+               variable=self.aram_var, 
+               command=lambda : self.roles_button(),
+               value=val)
+            rb.grid(row=row, column=col)     
+            
+        create_game_mode_button("RIFT", 0, 0, 0)
+        create_game_mode_button("ARAM", 0, 1, 1)
+        
+        # The roles frame
+        self.roles_info = RoleInfo(self.main_frame)
+        self.roles_info.main_frame.grid(row=1, column=0)
+        
+        #The runes set frame
+        
+        self.rune_preview = RunesPreveiw(self.main_frame, cb_preview)
+    
+        
+        
+    
+
 class App:
     ''' Main App '''
     
@@ -207,65 +359,71 @@ class App:
         self.runes_info_frame = tkinter.Frame(self.main_frame)
         self.runes_info_frame.grid(row=0, column=1)
         
-        # aram or rift
-        game_mode_frame = tkinter.Frame(self.runes_info_frame)
-        game_mode_frame.grid(row=0, column=0)
+        
+        # info display
+        self.info_display = InfoDisplay(self.main_frame, lambda : self.roles_button())
+        
+        
+        
+        # # aram or rift
+        # game_mode_frame = tkinter.Frame(self.runes_info_frame)
+        # game_mode_frame.grid(row=0, column=0)
 
-        self.aram_var = tkinter.IntVar()
+        # self.aram_var = tkinter.IntVar()
         
-        rb = tkinter.Radiobutton(game_mode_frame, 
-           text="RIFT", 
-           variable=self.aram_var, 
-           command=lambda : self.roles_button(),
-           value=0)
-        rb.grid(row=0, column=0)
+        # rb = tkinter.Radiobutton(game_mode_frame, 
+        #    text="RIFT", 
+        #    variable=self.aram_var, 
+        #    command=lambda : self.roles_button(),
+        #    value=0)
+        # rb.grid(row=0, column=0)
 
-        rb = tkinter.Radiobutton(game_mode_frame, 
-           text="ARAM", 
-           variable=self.aram_var, 
-           command=lambda : self.roles_button(),
-           value=1)
-        rb.grid(row=0, column=1)
+        # rb = tkinter.Radiobutton(game_mode_frame, 
+        #    text="ARAM", 
+        #    variable=self.aram_var, 
+        #    command=lambda : self.roles_button(),
+        #    value=1)
+        # rb.grid(row=0, column=1)
         
         
-        # lane information
-        self.position_frame = tkinter.Frame(self.runes_info_frame)
-        self.position_frame.grid(row=1, column=0)
+        # # lane information
+        # self.position_frame = tkinter.Frame(self.runes_info_frame)
+        # self.position_frame.grid(row=1, column=0)
         
-        self.role_idx = tkinter.IntVar()
+        # self.role_idx = tkinter.IntVar()
 
-        self.rune_set_idx = tkinter.IntVar()
-        self.rune_set_idx.set(0) 
+        # self.rune_set_idx = tkinter.IntVar()
+        # self.rune_set_idx.set(0) 
         
-        rune_set_index_frame = tkinter.Frame(self.runes_info_frame)
-        rune_set_index_frame.grid(row=2, column=0)
+        # rune_set_index_frame = tkinter.Frame(self.runes_info_frame)
+        # rune_set_index_frame.grid(row=2, column=0)
         
         
         
-        self.label_img_list = []
+        # self.label_img_list = []
         
-        for i in range(4):
-            rb_frame = tkinter.Frame(rune_set_index_frame)
-            rb_frame.grid(row=0, column=i)
+        # for i in range(4):
+        #     rb_frame = tkinter.Frame(rune_set_index_frame)
+        #     rb_frame.grid(row=0, column=i)
 
-            rb = tkinter.Radiobutton(rb_frame, 
-               text=str(i), 
-               variable=self.rune_set_idx, 
-               command=lambda : self.roles_button(),
-               value=i)
-            rb.grid(row=0, column=0) 
+        #     rb = tkinter.Radiobutton(rb_frame, 
+        #        text=str(i), 
+        #        variable=self.rune_set_idx, 
+        #        command=lambda : self.roles_button(),
+        #        value=i)
+        #     rb.grid(row=0, column=0) 
             
-            label_img = tkinter.Label(rb_frame)
-            label_img.grid(row=0, column=1)
+        #     label_img = tkinter.Label(rb_frame)
+        #     label_img.grid(row=0, column=1)
             
-            self.label_img_list.append(label_img)
+        #     self.label_img_list.append(label_img)
             
          
 
         
-        # frame containing the stones
-        self.rune_set_frame = tkinter.Frame(self.runes_info_frame)
-        self.rune_set_frame.grid(row = 2, column=0)
+        # # frame containing the stones
+        # self.rune_set_frame = tkinter.Frame(self.runes_info_frame)
+        # self.rune_set_frame.grid(row = 2, column=0)
         
 
         
@@ -283,12 +441,14 @@ class App:
     
     def show_options(self, champion): 
         
-        self.position_frame.destroy()
+        # self.position_frame.destroy()
 
-        self.position_frame = tkinter.Frame(self.runes_info_frame)
-        self.position_frame.grid(row=1, column=0)
+        # self.position_frame = tkinter.Frame(self.runes_info_frame)
+        # self.position_frame.grid(row=1, column=0)
         
         self.current_champion = champion
+        
+        self.info_display.roles_info.add_roles(champion.roles, lambda : self.roles_button())
   
 
         # roles        
@@ -430,9 +590,53 @@ def run_app():
     App(root, champions_list)
     
     root.mainloop()
+    
 
+def test_callback():
+    print("Test callback")
+    
+    
+def test_info():
+    root = tkinter.Tk()
+    ri = RoleInfo(root)
+    ri.main_frame.pack()
+    
+    roles = ["Top", "Middle", "Support"]
+    
+    ri.add_roles(roles, test_callback)
+
+    roles = ["Bottom", "Jungle"]
+    
+    ri.add_roles(roles, test_callback)
+    
+    roles = ["Bottom", "Middle", "Support"]
+    
+    ri.add_roles(roles, test_callback)
+    
+    root.mainloop()
 
 if __name__ == "__main__":
-    run_app()
+    # run_app()
+    
+    test_info()
+    
+    
+    # root = tkinter.Tk()
+    # ri = RoleInfo(root)
+    # ri.main_frame.pack()
+    
+    # roles = ["Top", "Middle", "Support"]
+    
+    # ri.add_roles(roles, test_callback)
+
+    # roles = ["Bottom", "Jungle"]
+    
+    # ri.add_roles(roles, test_callback)
+    
+    # roles = ["Bottom", "Middle", "Support"]
+    
+    # ri.add_roles(roles, test_callback)
+    
+    # root.mainloop()
         
         
