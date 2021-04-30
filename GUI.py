@@ -8,221 +8,35 @@ Created on Sat Apr 10 17:01:54 2021
 import PIL
 from PIL import ImageTk as itk
 import tkinter
-
 import pathlib
+import datetime
 
 import ChampionList
 import ChampionPage
+import ChampionNameBox
+import RunesDisplay
 
-
-def round_pictures(img):
-    # make the outer ring transparent
-    pixdata = img.load()
+def strfy_day_difference(n_days):
     
-    # every pixel outside the radius are now transparent
-    width, height = img.size
-    for x in range(width):
-        for y in range(height):
-            radius = width / 2
-            if (x - radius)**2 + (y - radius)**2 > radius**2:
-                pixdata[x, y] = (255, 255, 255, 0)
-
-
-class StoneFrame:
-    '''Frame that holds a single stone of a rune group'''
+    if n_days == 0:
+        return "Today"
+    elif n_days == 1:
+        return "Yesterday"
+    elif n_days <= 7:
+        return f"{n_days} ago"
+    elif n_days <= 14:
+        return "Last week"
+    elif n_days <= 30:
+        n_weeks = int(n_days / 7)
+        return f"{n_weeks} weeks ago"
+    elif n_days <= 60:
+        return "Last month"
+    elif n_days <= 360:
+        n_month = int(n_days / 30)
+        return f"{n_month} month ago"
+    else:
+        return "More than a year ago"
     
-    def __init__(self, parent_frame, stone, is_fragment = False):
-        
-        self.main_frame = tkinter.Frame(parent_frame)
-        
-        # if is the fragment make them smaller
-        if is_fragment:
-            self.img_size = 25
-        else:
-            self.img_size = 50
-        
-        
-        # loads the image in a tk friendly format
-        stone_image = self.prepare_photo_image(stone)
-        
-        # creates the label holding the image
-        self.label = tkinter.Label(self.main_frame, image=stone_image)
-        self.label.image = stone_image
-        self.label.pack()
-        
-        
-    def prepare_photo_image(self, stone):
-         # composes the filename if the image is active or not
-        img_file_mod = stone.img_file.replace(".png", "")
-        if stone.active:
-            img_file_mod = img_file_mod + "_modified_active.png"
-        else:
-            img_file_mod = img_file_mod + "_modified_inactive.png"
-            
-        # if the picture was already modified it loads it from the ./image 
-        # folder
-        if pathlib.Path(img_file_mod).is_file():
-            img = PIL.Image.open(img_file_mod)
-        else:
-            
-            img = PIL.Image.open(stone.img_file)
-            
-            # resize the image
-            img = img.resize((self.img_size,self.img_size), PIL.Image.ANTIALIAS) 
-            
-            # if the stone is inactive it makes it gray
-            if not stone.active:
-                # Converts to gray the image
-                img = img.convert("LA")
-                
-                # Converts the black and white image to RGBA again to modify 
-                # the alpha channel
-                img = img.convert("RGBA")
-                
-                round_pictures(img)
-  
-            
-            # save the image for later
-            img.save(img_file_mod)
-            
-        return itk.PhotoImage(img)  
-    
-    def update_image(self, stone):
-        img = self.prepare_photo_image(stone)       
-        
-        self.label["image"] = img
-        self.label.image = img
-        
-        
-class ChampionNameBox:
-    ''' Class that holds the list of champion names'''
-    
-    
-    def __init__(self, parent_frame, lb_callback):
-        # lb_callback is the function that reacts when is a name is pressed
-        self.name_list_box = tkinter.Listbox(parent_frame)
-        self.name_list_box.pack()
-        
-        self.name_list_box.bind("<<ListboxSelect>>", lambda e : lb_callback(e))   
-        
-        # stores the list in the box
-        self.name_idx = []
-        
-    def update_names(self, selection_list):
-        names_to_remove = []
-        
-        # removes the names that arent in the selection list
-        for name in self.name_idx:
-            if name not in selection_list:
-                names_to_remove.append(name)
-       
-        for name in names_to_remove:
-            self.remove_name(name)
-        
-        # adds the missing names
-        for name in selection_list:
-            if name not in self.name_idx:
-                self.add_name(name)
-
-    def add_name(self, name):
-        # appends at the end of the list box the name
-        idx = len(self.name_idx)
-        self.name_list_box.insert(idx, name)
-        
-        self.name_idx.append(name)
-    
-    def remove_name(self, name):
-        idx = self.name_idx.index(name)
-        
-        del self.name_idx[idx]
-        
-        self.name_list_box.delete(idx)
-        
-        
-        
-
-class RuneGroupFrame:
-    ''' This class holds a rune group'''
-    
-    
-    def __init__(self, parent_frame, rune_group, is_fragment = False):
-        
-        self.is_framgent = is_fragment
-        
-        # make it bigger for the runes, and smaller for the fragments
-        if self.is_framgent:
-            height, width = 150, 125
-        else:
-            height, width = 300, 250
-            
-        self.main_frame = tkinter.Frame(parent_frame, height=height, width=width)
-        self.main_frame.grid_propagate(0)
-        
-        # if a keystone exists, which for the fragment doesnt, create
-        # a keystone frame
-        if rune_group.keystone.rune_row:
-        
-            keystone = rune_group.keystone.get_stone()
-            self.key_rune_frame = StoneFrame(self.main_frame, keystone)
-            self.key_rune_frame.main_frame.grid(row = 0, column = 0)
-            
-        
-        # for each row of stone create a frame containing the 3 stones
-        self.stones_rows = []
-        self.stones_frames = []
-        for j, row in enumerate(rune_group.stone_rows):
-            stonerow_frame = tkinter.Frame(self.main_frame)
-            stonerow_frame.grid(row=j + 1, column=0)
-            
-            self.stones_frames.append(stonerow_frame)
-            
-            stones_row = []
-            
-            for i, stone in enumerate(row.get_stones()):
-                stone_frame = StoneFrame(stonerow_frame, stone, self.is_framgent)
-                stone_frame.main_frame.grid(row=0, column=i)
-                
-                stones_row.append(stone_frame)
-                
-            self.stones_rows.append(stones_row)
-    
-    def update_images(self, rune_group):
-        
-        print("updating runes...")
-        
-        if rune_group.keystone.rune_row:
-            keystone = rune_group.keystone.get_stone()
-            self.key_rune_frame.update_image(keystone)
-            
-        for i, current_row, input_row in zip(range(len(self.stones_rows)), self.stones_rows, rune_group.stone_rows):
-            
-            input_row = input_row.get_stones()
-            
-            print(len(current_row), len(input_row) )
-            
-            # remove excess stones
-            while len(current_row) > len(input_row):
-                print("deleting rune")
-                current_row[-1].main_frame.destroy()
-                del current_row[-1]
-            
-      
-            # update the stones
-            for current_stone, input_stone in zip(current_row, input_row):
-                current_stone.update_image(input_stone)
-            
-            idx = len(current_row) - 1
-            print("rune idx", idx)
-            while len(input_row) > len(current_row):
-                stone = input_row[idx + 1]
-                idx += 1
-                
-                frame = self.stones_frames[i]
-                new_stone_frame = StoneFrame(frame, stone, self.is_framgent)
-                new_stone_frame.main_frame.grid(row=0, column=idx)
-                current_row.append(new_stone_frame)
-        
-        
 
 class RoleInfo:
     ''' Manages the role info button '''
@@ -312,7 +126,7 @@ class RunesPreveiw:
             
             img = img.convert("RGBA")
             
-            round_pictures(img)
+            RunesDisplay.round_pictures(img)
             
             
             # group 2
@@ -322,7 +136,7 @@ class RunesPreveiw:
             
             img2 = img2.convert("RGBA")
             
-            round_pictures(img2)
+            RunesDisplay.round_pictures(img2)
             
             img2 = img2.resize((25, 25))
             
@@ -369,29 +183,7 @@ class InfoDisplay:
         self.rune_preview = RunesPreveiw(self.main_frame, cb_preview)
         self.rune_preview.main_frame.grid(row=2, column=0) 
         
-class RuneSetFrame:
-
-    def __init__(self, parent_frame, rune_set):
-        self.main_frame = tkinter.Frame(parent_frame)
-        
-        rg1, rg2, rg3 = rune_set.get_groups()
-        
-        self.rg1_frame = RuneGroupFrame(self.main_frame, rg1)
-        self.rg1_frame.main_frame.grid(row=0, column=0)
-
-        self.rg2_frame = RuneGroupFrame(self.main_frame, rg2)
-        self.rg2_frame.main_frame.grid(row=0, column=1)       
-        
-        self.rg3_frame = RuneGroupFrame(self.main_frame, rg3, is_fragment=True)
-        self.rg3_frame.main_frame.grid(row=1, column=0, columnspan=2) 
     
-    
-    def update_images(self, rune_set):
-        rg1, rg2, rg3 = rune_set.get_groups()
-        
-        self.rg1_frame.update_images(rg1)
-        self.rg2_frame.update_images(rg2)
-        self.rg3_frame.update_images(rg3)        
         
 class App:
     ''' Main App '''
@@ -429,9 +221,20 @@ class App:
         lb.pack()
         
         
-        self.name_list_box = ChampionNameBox(champion_info_frame, self.champ_selection)
+        self.name_list_box = ChampionNameBox.ChampionNameBox(champion_info_frame, self.champ_selection)
         self.name_list_box.update_names(self.champions_list.keys())
-
+        
+        
+        button_update = tkinter.Button(champion_info_frame, text="Update", command=lambda : self.update_champion())
+        button_update.pack()
+        
+        self.update_time_str = tkinter.StringVar()
+        self.update_time_str.set("")
+        
+        
+        label_update = tkinter.Label(champion_info_frame, textvariable=self.update_time_str)
+        label_update.pack()
+        
         # runes page shown
         self.runes_info_frame = tkinter.Frame(self.main_frame)
         self.runes_info_frame.grid(row=0, column=1)
@@ -444,17 +247,12 @@ class App:
         
         # frame containing the stones
         self.rune_set_frame = None
-       
-        
+
 
         # default champion
         champion = self.champions_list["Aatrox"]
         
         self.show_options(champion)
-        
-        
-        
-        
 
     
     def show_options(self, champion): 
@@ -470,7 +268,23 @@ class App:
         role_idx = self.info_display.roles_info.role_var.get()
         aram_var = self.info_display.aram_var.get()
             
-        cp = ChampionPage.ChampionPage(champion, champion. roles[role_idx], aram_var)  
+        cp = ChampionPage.ChampionPage(champion, champion.roles[role_idx], aram_var)  
+        
+        
+        # get the creation time of the file
+        file = pathlib.Path(cp.get_filename())
+        creation_time = file.stat().st_mtime
+        mtime = datetime.datetime.fromtimestamp(creation_time)
+        
+        now = datetime.datetime.now()
+        delta = now - mtime
+        days = delta.days
+        
+        stime = strfy_day_difference(days)
+        
+        #stime = mtime.strftime("%d %B %Y")
+        
+        self.update_time_str.set(stime)
         
         # display the rune sets
         self.info_display.rune_preview.update_images(cp)
@@ -534,10 +348,23 @@ class App:
         rune_set = champion_page.get_runes_set(idx)
         
         if self.rune_set_frame is None:
-            self.rune_set_frame = RuneSetFrame(self.runes_info_frame, rune_set)
+            self.rune_set_frame = RunesDisplay.RuneSetFrame(self.runes_info_frame, rune_set)
             self.rune_set_frame.main_frame.grid(row = 2, column=0)
         else:
-            self.rune_set_frame.update_images(rune_set)           
+            self.rune_set_frame.update_images(rune_set)    
+    
+    def update_champion(self):
+        champion = self.current_champion
+        
+        role_idx = self.info_display.roles_info.role_var.get()
+        aram_var = self.info_display.aram_var.get()
+        
+        cp = ChampionPage.ChampionPage(champion, champion.roles[role_idx], aram_var)
+        cp.download()
+        
+        self.show_options(champion)
+        
+        
         
         
 
@@ -575,6 +402,8 @@ def test_info():
     ri.add_roles(roles, test_callback)
     
     root.mainloop()
+    
+
 
 if __name__ == "__main__":
     run_app()

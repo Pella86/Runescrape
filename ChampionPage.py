@@ -132,19 +132,32 @@ class ChampionPage:
         
         self.champion = champion
         self.role = role
+        self.is_aram = is_aram
+        
+        filename = self.get_filename()
         
         if is_aram:
             url = champion.aram_link
-            filename = f"./cache/{champion.name}_aram_stats.pickle"
         else:
             # get the champion page
             url = champion.link + "/" + role
-            filename = f"./cache/{champion.name}_{role}_stats.pickle"
+            
+        # holds the rune groups
+        self.runes_sets = []
         
-        req = RequestsHandler.Request(url, filename)
-        req.load()
+        # fills the rune_sets variable
+        self.req = RequestsHandler.Request(url, filename)
+        
+        self.req.load()
+        self.parse()
 
-        soup = req.get_soup()
+    
+    def download(self):
+        self.req.reload()
+        self.parse()
+        
+    def parse(self):
+        soup = self.req.get_soup()
         
         # get the runes table
         class_tag = "champion-overview__table champion-overview__table--rune tabItems"
@@ -156,7 +169,7 @@ class ChampionPage:
         tbodies = table.find_all("tbody", recursive=False)
         
 
-        self.runes_sets = []
+        
         
         # skip the first table that isnt about the runes
         for tbody in tbodies[1:]:
@@ -164,11 +177,20 @@ class ChampionPage:
             
             for rune_set in rune_sets:
                 runes_set = RunesSet(rune_set)
-                self.runes_sets.append(runes_set)
-
+                self.runes_sets.append(runes_set)        
+        
 
     def get_runes_set(self, idx):
         return self.runes_sets[idx]
+
+    def get_filename(self):
+        if self.is_aram:
+            return f"./cache/{self.champion.name}_aram_stats.pickle"
+        else:
+            return f"./cache/{self.champion.name}_{self.role}_stats.pickle"
+    
+    def delete_cache(self):
+        os.remove(self.get_filename())
 
 
 
