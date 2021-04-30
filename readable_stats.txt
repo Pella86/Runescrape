@@ -1,455 +1,458 @@
-Tue Apr 27 12:09:35 2021    profile_stats
+Thu Apr 29 19:12:21 2021    profile_stats
 
-         7221092 function calls (7172756 primitive calls) in 22.489 seconds
+         2669391 function calls (2654042 primitive calls) in 12.222 seconds
 
    Ordered by: cumulative time
 
    ncalls  tottime  percall  cumtime  percall filename:lineno(function)
-      2/1    0.000    0.000   22.490   22.490 {built-in method builtins.exec}
-        1    0.000    0.000   22.490   22.490 <string>:1(<module>)
-        1    0.000    0.000   22.490   22.490 C:\Users\Media Markt\Desktop\Vita Online\LoL\runescrape\GUI.py:423(run_app)
-        1    0.000    0.000   21.879   21.879 C:\ProgramData\Anaconda3\lib\tkinter\__init__.py:1281(mainloop)
-        1   16.965   16.965   21.879   21.879 {method 'mainloop' of '_tkinter.tkapp' objects}
-       26    0.004    0.000    4.979    0.192 C:\Users\Media Markt\Desktop\Vita Online\LoL\runescrape\GUI.py:284(show_options)
-       40    0.000    0.000    4.914    0.123 C:\ProgramData\Anaconda3\lib\tkinter\__init__.py:1700(__call__)
-       33    0.000    0.000    4.128    0.125 C:\Users\Media Markt\Desktop\Vita Online\LoL\runescrape\GUI.py:193(<lambda>)
-       33    0.000    0.000    4.128    0.125 C:\Users\Media Markt\Desktop\Vita Online\LoL\runescrape\GUI.py:376(update_runes_trace)
-       27    0.000    0.000    2.699    0.100 C:\Users\Media Markt\Desktop\Vita Online\LoL\runescrape\RequestsHandler.py:77(get_soup)
-       27    0.001    0.000    2.694    0.100 C:\ProgramData\Anaconda3\lib\site-packages\bs4\__init__.py:97(__init__)
-       27    0.000    0.000    2.692    0.100 C:\ProgramData\Anaconda3\lib\site-packages\bs4\__init__.py:392(_feed)
-       27    0.000    0.000    2.692    0.100 C:\ProgramData\Anaconda3\lib\site-packages\bs4\builder\_htmlparser.py:331(feed)
-       27    0.000    0.000    2.692    0.100 C:\ProgramData\Anaconda3\lib\html\parser.py:104(feed)
-       54    0.192    0.004    2.692    0.050 C:\ProgramData\Anaconda3\lib\html\parser.py:134(goahead)
-       26    0.001    0.000    2.609    0.100 C:\Users\Media Markt\Desktop\Vita Online\LoL\runescrape\ChampionPage.py:130(__init__)
-    39793    0.235    0.000    1.684    0.000 C:\ProgramData\Anaconda3\lib\html\parser.py:301(parse_starttag)
-       26    0.001    0.000    1.458    0.056 C:\Users\Media Markt\Desktop\Vita Online\LoL\runescrape\GUI.py:399(show_runes)
-    11178    1.098    0.000    1.099    0.000 {method 'call' of '_tkinter.tkapp' objects}
-    39793    0.087    0.000    1.034    0.000 C:\ProgramData\Anaconda3\lib\site-packages\bs4\builder\_htmlparser.py:101(handle_starttag)
-    39793    0.099    0.000    0.881    0.000 C:\ProgramData\Anaconda3\lib\site-packages\bs4\__init__.py:606(handle_starttag)
-       78    0.005    0.000    0.842    0.011 C:\Users\Media Markt\Desktop\Vita Online\LoL\runescrape\GUI.py:138(__init__)
-        6    0.000    0.000    0.753    0.126 C:\Users\Media Markt\Desktop\Vita Online\LoL\runescrape\GUI.py:96(<lambda>)
-        6    0.000    0.000    0.753    0.126 C:\Users\Media Markt\Desktop\Vita Online\LoL\runescrape\GUI.py:354(champ_selection)
-        4    0.000    0.000    0.753    0.188 C:\Users\Media Markt\Desktop\Vita Online\LoL\runescrape\GUI.py:364(show_runes_name)
-      864    0.009    0.000    0.740    0.001 C:\Users\Media Markt\Desktop\Vita Online\LoL\runescrape\GUI.py:34(__init__)
-     1374    0.002    0.000    0.732    0.001 C:\ProgramData\Anaconda3\lib\site-packages\bs4\element.py:1682(find_all)
-     1374    0.058    0.000    0.730    0.001 C:\ProgramData\Anaconda3\lib\site-packages\bs4\element.py:694(_find_all)
-   131346    0.096    0.000    0.605    0.000 C:\ProgramData\Anaconda3\lib\site-packages\bs4\element.py:1950(search)
-  2180/53    0.011    0.000    0.571    0.011 C:\ProgramData\Anaconda3\lib\tkinter\__init__.py:2302(destroy)
-    81017    0.152    0.000    0.566    0.000 C:\ProgramData\Anaconda3\lib\site-packages\bs4\__init__.py:468(endData)
-      130    0.001    0.000    0.534    0.004 C:\Users\Media Markt\Desktop\Vita Online\LoL\runescrape\ChampionPage.py:119(get_groups)
-      130    0.001    0.000    0.532    0.004 C:\Users\Media Markt\Desktop\Vita Online\LoL\runescrape\ChampionPage.py:113(get_runes)
-    31342    0.069    0.000    0.503    0.000 C:\ProgramData\Anaconda3\lib\html\parser.py:386(parse_endtag)
-    51272    0.080    0.000    0.462    0.000 C:\ProgramData\Anaconda3\lib\site-packages\bs4\element.py:1895(search_tag)
-    39659    0.081    0.000    0.423    0.000 C:\ProgramData\Anaconda3\lib\site-packages\bs4\builder\_htmlparser.py:141(handle_endtag)
-    39820    0.108    0.000    0.406    0.000 C:\ProgramData\Anaconda3\lib\site-packages\bs4\element.py:989(__init__)
-      968    0.004    0.000    0.392    0.000 C:\ProgramData\Anaconda3\lib\site-packages\PIL\ImageTk.py:85(__init__)
+      2/1    0.000    0.000   12.222   12.222 {built-in method builtins.exec}
+        1    0.000    0.000   12.222   12.222 <string>:1(<module>)
+        1    0.000    0.000   12.222   12.222 C:\Users\Media Markt\Desktop\Vita Online\LoL\runescrape\GUI.py:469(run_app)
+        1    0.000    0.000   11.610   11.610 C:\ProgramData\Anaconda3\lib\tkinter\__init__.py:1281(mainloop)
+        1   10.278   10.278   11.610   11.610 {method 'mainloop' of '_tkinter.tkapp' objects}
+        8    0.000    0.000    1.473    0.184 C:\Users\Media Markt\Desktop\Vita Online\LoL\runescrape\GUI.py:375(show_options)
+        8    0.000    0.000    1.332    0.166 C:\ProgramData\Anaconda3\lib\tkinter\__init__.py:1700(__call__)
+        9    0.000    0.000    1.025    0.114 C:\Users\Media Markt\Desktop\Vita Online\LoL\runescrape\RequestsHandler.py:77(get_soup)
+        9    0.000    0.000    1.023    0.114 C:\ProgramData\Anaconda3\lib\site-packages\bs4\__init__.py:97(__init__)
+        9    0.000    0.000    1.023    0.114 C:\ProgramData\Anaconda3\lib\site-packages\bs4\__init__.py:392(_feed)
+        9    0.000    0.000    1.023    0.114 C:\ProgramData\Anaconda3\lib\site-packages\bs4\builder\_htmlparser.py:331(feed)
+        9    0.000    0.000    1.023    0.114 C:\ProgramData\Anaconda3\lib\html\parser.py:104(feed)
+       18    0.073    0.004    1.023    0.057 C:\ProgramData\Anaconda3\lib\html\parser.py:134(goahead)
+        5    0.000    0.000    0.960    0.192 C:\Users\Media Markt\Desktop\Vita Online\LoL\runescrape\GUI.py:96(<lambda>)
+        5    0.000    0.000    0.960    0.192 C:\Users\Media Markt\Desktop\Vita Online\LoL\runescrape\GUI.py:400(champ_selection)
+        5    0.000    0.000    0.960    0.192 C:\Users\Media Markt\Desktop\Vita Online\LoL\runescrape\GUI.py:410(show_runes_name)
+        8    0.000    0.000    0.770    0.096 C:\Users\Media Markt\Desktop\Vita Online\LoL\runescrape\ChampionPage.py:130(__init__)
+    15220    0.089    0.000    0.634    0.000 C:\ProgramData\Anaconda3\lib\html\parser.py:301(parse_starttag)
+        8    0.000    0.000    0.430    0.054 C:\Users\Media Markt\Desktop\Vita Online\LoL\runescrape\GUI.py:445(show_runes)
+    15220    0.033    0.000    0.390    0.000 C:\ProgramData\Anaconda3\lib\site-packages\bs4\builder\_htmlparser.py:101(handle_starttag)
         1    0.000    0.000    0.378    0.378 C:\Users\Media Markt\Desktop\Vita Online\LoL\runescrape\ChampionList.py:34(__init__)
-      968    0.006    0.000    0.368    0.000 C:\ProgramData\Anaconda3\lib\site-packages\PIL\ImageTk.py:151(paste)
-    39471    0.027    0.000    0.341    0.000 C:\ProgramData\Anaconda3\lib\site-packages\bs4\__init__.py:644(handle_endtag)
-119484/73500    0.177    0.000    0.323    0.000 C:\ProgramData\Anaconda3\lib\site-packages\bs4\element.py:1983(_matches)
-      208    0.256    0.001    0.256    0.001 C:\Users\Media Markt\Desktop\Vita Online\LoL\runescrape\GUI.py:18(round_pictures)
-    33501    0.134    0.000    0.241    0.000 C:\ProgramData\Anaconda3\lib\site-packages\bs4\builder\__init__.py:265(_replace_cdata_list_attribute_values)
-    58663    0.079    0.000    0.225    0.000 C:\ProgramData\Anaconda3\lib\site-packages\bs4\__init__.py:510(object_was_parsed)
-   282044    0.214    0.000    0.214    0.000 {method 'match' of 're.Pattern' objects}
-     2180    0.008    0.000    0.209    0.000 C:\ProgramData\Anaconda3\lib\tkinter\__init__.py:2286(__init__)
-  1475612    0.142    0.000    0.202    0.000 {built-in method builtins.isinstance}
-      361    0.000    0.000    0.181    0.001 C:\ProgramData\Anaconda3\lib\site-packages\bs4\element.py:1657(find)
-   157146    0.180    0.000    0.180    0.000 C:\ProgramData\Anaconda3\lib\site-packages\bs4\element.py:125(setup)
-      870    0.001    0.000    0.178    0.000 C:\ProgramData\Anaconda3\lib\tkinter\__init__.py:2748(__init__)
-    58663    0.048    0.000    0.172    0.000 C:\ProgramData\Anaconda3\lib\site-packages\bs4\element.py:838(__new__)
-        1    0.000    0.000    0.171    0.171 C:\Users\Media Markt\Desktop\Vita Online\LoL\runescrape\GUI.py:170(__init__)
-     1176    0.013    0.000    0.144    0.000 C:\ProgramData\Anaconda3\lib\site-packages\PIL\ImageFile.py:140(load)
-   144137    0.088    0.000    0.142    0.000 C:\ProgramData\Anaconda3\lib\_markupbase.py:48(updatepos)
-     1072    0.005    0.000    0.141    0.000 C:\ProgramData\Anaconda3\lib\site-packages\PIL\Image.py:2770(open)
-    54510    0.011    0.000    0.133    0.000 C:\ProgramData\Anaconda3\lib\html\__init__.py:122(unescape)
-     9240    0.065    0.000    0.122    0.000 {method 'sub' of 're.Pattern' objects}
-     1936    0.002    0.000    0.112    0.000 C:\ProgramData\Anaconda3\lib\pathlib.py:1376(is_file)
-    39793    0.033    0.000    0.112    0.000 C:\ProgramData\Anaconda3\lib\html\parser.py:352(check_for_whole_start_tag)
-     1967    0.105    0.000    0.111    0.000 {built-in method nt.stat}
-     1936    0.001    0.000    0.109    0.000 C:\ProgramData\Anaconda3\lib\pathlib.py:1173(stat)
-      520    0.007    0.000    0.102    0.000 C:\Users\Media Markt\Desktop\Vita Online\LoL\runescrape\ChampionPage.py:36(get_stones)
-    39471    0.058    0.000    0.093    0.000 C:\ProgramData\Anaconda3\lib\site-packages\bs4\__init__.py:578(_popToTag)
-     1072    0.088    0.000    0.088    0.000 {method 'decode' of 'ImagingDecoder' objects}
-        1    0.000    0.000    0.086    0.086 C:\ProgramData\Anaconda3\lib\site-packages\bs4\element.py:1754(select)
-        1    0.000    0.000    0.086    0.086 C:\ProgramData\Anaconda3\lib\site-packages\soupsieve\__init__.py:111(select)
-        1    0.000    0.000    0.086    0.086 C:\ProgramData\Anaconda3\lib\site-packages\soupsieve\css_match.py:1518(select)
-        2    0.000    0.000    0.086    0.043 C:\ProgramData\Anaconda3\lib\site-packages\soupsieve\css_match.py:1523(iselect)
-        2    0.002    0.001    0.085    0.043 C:\ProgramData\Anaconda3\lib\site-packages\soupsieve\css_match.py:1391(select)
-    33664    0.081    0.000    0.085    0.000 C:\ProgramData\Anaconda3\lib\site-packages\bs4\__init__.py:538(_linkage_fixer)
-     1099    0.070    0.000    0.070    0.000 {built-in method io.open}
-     4965    0.004    0.000    0.070    0.000 C:\ProgramData\Anaconda3\lib\site-packages\soupsieve\css_match.py:1422(match)
-    33502    0.067    0.000    0.067    0.000 {method 'keys' of 'dict' objects}
-       34    0.002    0.000    0.066    0.002 C:\Users\Media Markt\Desktop\Vita Online\LoL\runescrape\GUI.py:101(update_names)
-     1072    0.009    0.000    0.062    0.000 C:\ProgramData\Anaconda3\lib\site-packages\PIL\Image.py:2824(_open_core)
-4971/4965    0.007    0.000    0.061    0.000 C:\ProgramData\Anaconda3\lib\site-packages\soupsieve\css_match.py:1307(match_selectors)
-   149903    0.027    0.000    0.060    0.000 C:\ProgramData\Anaconda3\lib\abc.py:137(__instancecheck__)
-   127781    0.042    0.000    0.057    0.000 C:\ProgramData\Anaconda3\lib\html\__init__.py:91(_replace_charref)
-   104287    0.054    0.000    0.054    0.000 {method 'search' of 're.Pattern' objects}
-   255025    0.052    0.000    0.052    0.000 {method 'group' of 're.Match' objects}
-    57914    0.025    0.000    0.047    0.000 C:\ProgramData\Anaconda3\lib\site-packages\bs4\builder\_htmlparser.py:159(handle_data)
-     1072    0.004    0.000    0.047    0.000 C:\ProgramData\Anaconda3\lib\site-packages\PIL\ImageFile.py:80(__init__)
-   328773    0.045    0.000    0.045    0.000 {built-in method builtins.hasattr}
-        1    0.000    0.000    0.044    0.044 C:\ProgramData\Anaconda3\lib\tkinter\__init__.py:2003(__init__)
-     4971    0.003    0.000    0.043    0.000 C:\ProgramData\Anaconda3\lib\site-packages\soupsieve\css_match.py:698(match_tag)
-        1    0.043    0.043    0.043    0.043 {built-in method _tkinter.create}
-   130665    0.042    0.000    0.042    0.000 {method 'count' of 'str' objects}
-    39820    0.036    0.000    0.042    0.000 C:\ProgramData\Anaconda3\lib\site-packages\bs4\__init__.py:458(pushTag)
-   131635    0.021    0.000    0.042    0.000 {built-in method builtins.next}
-      768    0.001    0.000    0.041    0.000 C:\Users\Media Markt\Desktop\Vita Online\LoL\runescrape\GUI.py:124(remove_name)
-     1072    0.006    0.000    0.040    0.000 C:\ProgramData\Anaconda3\lib\site-packages\PIL\PngImagePlugin.py:561(_open)
-      768    0.000    0.000    0.040    0.000 C:\ProgramData\Anaconda3\lib\tkinter\__init__.py:2789(delete)
-      624    0.002    0.000    0.035    0.000 C:\ProgramData\Anaconda3\lib\site-packages\PIL\Image.py:831(convert)
-       27    0.001    0.000    0.033    0.001 C:\Users\Media Markt\Desktop\Vita Online\LoL\runescrape\RequestsHandler.py:53(load)
-   149903    0.033    0.000    0.033    0.000 {built-in method _abc._abc_instancecheck}
-      260    0.000    0.000    0.032    0.000 C:\Users\Media Markt\Desktop\Vita Online\LoL\runescrape\ChampionPage.py:88(get_stone)
-        1    0.000    0.000    0.032    0.032 C:\ProgramData\Anaconda3\lib\tkinter\__init__.py:2058(destroy)
-    39793    0.024    0.000    0.032    0.000 C:\ProgramData\Anaconda3\lib\site-packages\bs4\__init__.py:448(popTag)
-   100444    0.022    0.000    0.031    0.000 C:\ProgramData\Anaconda3\lib\site-packages\bs4\element.py:1858(_normalize_search_value)
-     1265    0.002    0.000    0.030    0.000 C:\ProgramData\Anaconda3\lib\tkinter\__init__.py:2730(__init__)
-  416/208    0.002    0.000    0.030    0.000 C:\ProgramData\Anaconda3\lib\site-packages\PIL\Image.py:1786(resize)
-   306997    0.029    0.000    0.029    0.000 {method 'append' of 'list' objects}
-      104    0.000    0.000    0.029    0.000 C:\ProgramData\Anaconda3\lib\tkinter\__init__.py:1491(__setitem__)
-      104    0.000    0.000    0.028    0.000 C:\ProgramData\Anaconda3\lib\tkinter\__init__.py:1478(configure)
-      104    0.000    0.000    0.028    0.000 C:\ProgramData\Anaconda3\lib\tkinter\__init__.py:1466(_configure)
-     4971    0.004    0.000    0.028    0.000 C:\ProgramData\Anaconda3\lib\site-packages\soupsieve\css_match.py:689(match_tagname)
-   155555    0.027    0.000    0.028    0.000 C:\ProgramData\Anaconda3\lib\site-packages\bs4\element.py:1717(descendants)
-   216445    0.027    0.000    0.027    0.000 {method 'get' of 'dict' objects}
-     1936    0.003    0.000    0.026    0.000 C:\ProgramData\Anaconda3\lib\pathlib.py:1019(__new__)
-    27214    0.026    0.000    0.026    0.000 {method 'findall' of 're.Pattern' objects}
-    11263    0.018    0.000    0.024    0.000 C:\ProgramData\Anaconda3\lib\site-packages\soupsieve\util.py:44(lower)
-    58777    0.017    0.000    0.023    0.000 C:\ProgramData\Anaconda3\lib\site-packages\bs4\__init__.py:654(handle_data)
-     1936    0.003    0.000    0.022    0.000 C:\ProgramData\Anaconda3\lib\pathlib.py:664(_from_parts)
-      769    0.001    0.000    0.022    0.000 C:\Users\Media Markt\Desktop\Vita Online\LoL\runescrape\GUI.py:117(add_name)
-      539    0.001    0.000    0.021    0.000 C:\ProgramData\Anaconda3\lib\site-packages\bs4\builder\_htmlparser.py:86(handle_startendtag)
-      769    0.001    0.000    0.021    0.000 C:\ProgramData\Anaconda3\lib\tkinter\__init__.py:2804(insert)
-    60626    0.020    0.000    0.020    0.000 {built-in method __new__ of type object at 0x00007FFC3E7C79A0}
-   174967    0.020    0.000    0.020    0.000 {method 'lower' of 'str' objects}
-      968    0.001    0.000    0.020    0.000 C:\ProgramData\Anaconda3\lib\tkinter\__init__.py:3540(__init__)
-   105920    0.019    0.000    0.019    0.000 {method 'startswith' of 'str' objects}
-    39793    0.016    0.000    0.019    0.000 C:\ProgramData\Anaconda3\lib\site-packages\bs4\element.py:1105(is_empty_element)
-     1936    0.004    0.000    0.019    0.000 C:\ProgramData\Anaconda3\lib\pathlib.py:644(_parse_args)
-        1    0.001    0.001    0.018    0.018 C:\Users\Media Markt\Desktop\Vita Online\LoL\runescrape\ChampionList.py:52(parse_champions)
-   167873    0.018    0.000    0.018    0.000 {method 'end' of 're.Match' objects}
-     3216    0.005    0.000    0.018    0.000 C:\ProgramData\Anaconda3\lib\site-packages\PIL\PngImagePlugin.py:106(read)
-      968    0.006    0.000    0.018    0.000 C:\ProgramData\Anaconda3\lib\tkinter\__init__.py:3484(__init__)
-     9648    0.017    0.000    0.017    0.000 {method 'read' of '_io.BufferedReader' objects}
-      836    0.002    0.000    0.017    0.000 C:\ProgramData\Anaconda3\lib\_markupbase.py:168(parse_comment)
-     2144    0.004    0.000    0.016    0.000 C:\ProgramData\Anaconda3\lib\site-packages\PIL\PngImagePlugin.py:138(call)
-      964    0.001    0.000    0.015    0.000 C:\ProgramData\Anaconda3\lib\site-packages\PIL\ImageTk.py:117(__del__)
-     4464    0.008    0.000    0.015    0.000 C:\ProgramData\Anaconda3\lib\tkinter\__init__.py:1315(_options)
-     1072    0.015    0.000    0.015    0.000 {method 'close' of '_io.BufferedReader' objects}
-     1311    0.001    0.000    0.015    0.000 C:\ProgramData\Anaconda3\lib\tkinter\__init__.py:2209(grid_configure)
-      836    0.001    0.000    0.014    0.000 C:\ProgramData\Anaconda3\lib\site-packages\bs4\builder\_htmlparser.py:221(handle_comment)
-     4966    0.005    0.000    0.014    0.000 C:\ProgramData\Anaconda3\lib\site-packages\soupsieve\css_match.py:206(get_descendants)
-     1936    0.008    0.000    0.014    0.000 C:\ProgramData\Anaconda3\lib\pathlib.py:63(parse_parts)
-   177116    0.013    0.000    0.013    0.000 C:\ProgramData\Anaconda3\lib\site-packages\bs4\element.py:1334(__bool__)
-    51902    0.013    0.000    0.013    0.000 {method 'rindex' of 'str' objects}
-     4971    0.003    0.000    0.013    0.000 C:\ProgramData\Anaconda3\lib\site-packages\soupsieve\css_match.py:501(get_tag)
-     1375    0.002    0.000    0.012    0.000 C:\ProgramData\Anaconda3\lib\site-packages\bs4\element.py:2069(__init__)
-    39820    0.012    0.000    0.012    0.000 C:\ProgramData\Anaconda3\lib\site-packages\bs4\builder\__init__.py:176(can_be_empty_element)
-     4971    0.005    0.000    0.012    0.000 C:\ProgramData\Anaconda3\lib\site-packages\soupsieve\css_match.py:648(match_namespace)
-     6743    0.007    0.000    0.011    0.000 C:\ProgramData\Anaconda3\lib\tkinter\__init__.py:96(_cnfmerge)
-     2180    0.010    0.000    0.011    0.000 C:\ProgramData\Anaconda3\lib\tkinter\__init__.py:2253(_setup)
-    24826    0.007    0.000    0.011    0.000 C:\ProgramData\Anaconda3\lib\site-packages\bs4\element.py:1291(get)
-    92743    0.010    0.000    0.010    0.000 {method 'join' of 'str' objects}
-     2374    0.006    0.000    0.010    0.000 C:\ProgramData\Anaconda3\lib\site-packages\bs4\element.py:722(<genexpr>)
-     1072    0.002    0.000    0.010    0.000 C:\ProgramData\Anaconda3\lib\site-packages\PIL\PngImagePlugin.py:668(load_end)
-    72891    0.009    0.000    0.009    0.000 {method 'start' of 're.Match' objects}
-       27    0.008    0.000    0.009    0.000 {built-in method _pickle.load}
-    39820    0.008    0.000    0.009    0.000 C:\ProgramData\Anaconda3\lib\site-packages\bs4\builder\__init__.py:399(set_up_substitutions)
-     1827    0.003    0.000    0.009    0.000 C:\ProgramData\Anaconda3\lib\html\parser.py:123(set_cdata_mode)
-     1321    0.001    0.000    0.008    0.000 C:\ProgramData\Anaconda3\lib\site-packages\soupsieve\css_match.py:786(match_classes)
-    31342    0.008    0.000    0.008    0.000 C:\ProgramData\Anaconda3\lib\html\parser.py:127(clear_cdata_mode)
-      869    0.001    0.000    0.008    0.000 C:\ProgramData\Anaconda3\lib\tkinter\__init__.py:2125(pack_configure)
-    16684    0.007    0.000    0.008    0.000 C:\ProgramData\Anaconda3\lib\site-packages\soupsieve\css_match.py:95(is_tag)
-    39820    0.008    0.000    0.008    0.000 {method 'endswith' of 'str' objects}
-     1374    0.003    0.000    0.008    0.000 C:\ProgramData\Anaconda3\lib\site-packages\bs4\element.py:1820(__init__)
-      208    0.008    0.000    0.008    0.000 {method 'resize' of 'ImagingCore' objects}
-    39793    0.008    0.000    0.008    0.000 C:\ProgramData\Anaconda3\lib\_markupbase.py:40(getpos)
-    83671    0.007    0.000    0.007    0.000 {built-in method builtins.len}
-     1321    0.001    0.000    0.007    0.000 C:\ProgramData\Anaconda3\lib\site-packages\soupsieve\css_match.py:323(get_classes)
-     3216    0.007    0.000    0.007    0.000 {method 'tell' of '_io.BufferedReader' objects}
-    39820    0.007    0.000    0.007    0.000 {method 'pop' of 'list' objects}
-     1072    0.004    0.000    0.007    0.000 C:\ProgramData\Anaconda3\lib\site-packages\PIL\PngImagePlugin.py:341(chunk_IHDR)
-     2171    0.001    0.000    0.007    0.000 C:\ProgramData\Anaconda3\lib\logging\__init__.py:1356(debug)
-     1321    0.002    0.000    0.006    0.000 C:\ProgramData\Anaconda3\lib\site-packages\soupsieve\css_match.py:299(get_attribute_by_name)
-     1936    0.001    0.000    0.006    0.000 C:\ProgramData\Anaconda3\lib\pathlib.py:714(__fspath__)
-       43    0.000    0.000    0.006    0.000 C:\ProgramData\Anaconda3\lib\tkinter\__init__.py:2974(__init__)
-     1072    0.001    0.000    0.005    0.000 C:\ProgramData\Anaconda3\lib\site-packages\PIL\PngImagePlugin.py:633(load_prepare)
-     1827    0.001    0.000    0.005    0.000 C:\ProgramData\Anaconda3\lib\re.py:232(compile)
-       27    0.000    0.000    0.005    0.000 C:\Users\Media Markt\Desktop\Vita Online\LoL\runescrape\LogFiles.py:92(main_log)
-    39793    0.005    0.000    0.005    0.000 {method 'strip' of 'str' objects}
-       27    0.000    0.000    0.005    0.000 C:\ProgramData\Anaconda3\lib\logging\__init__.py:1491(_log)
-     4971    0.003    0.000    0.005    0.000 C:\ProgramData\Anaconda3\lib\_collections_abc.py:657(get)
-     1936    0.003    0.000    0.005    0.000 C:\ProgramData\Anaconda3\lib\pathlib.py:704(__str__)
-     1827    0.003    0.000    0.005    0.000 C:\ProgramData\Anaconda3\lib\re.py:271(_compile)
-     1072    0.002    0.000    0.004    0.000 C:\ProgramData\Anaconda3\lib\site-packages\PIL\Image.py:394(_getdecoder)
-     1072    0.002    0.000    0.004    0.000 C:\ProgramData\Anaconda3\lib\site-packages\PIL\PngImagePlugin.py:144(crc)
-       27    0.004    0.000    0.004    0.000 C:\ProgramData\Anaconda3\lib\site-packages\requests\models.py:835(text)
-      416    0.004    0.000    0.004    0.000 {method 'convert' of 'ImagingCore' objects}
-     1072    0.001    0.000    0.004    0.000 C:\ProgramData\Anaconda3\lib\site-packages\PIL\ImageFile.py:274(load_prepare)
-    32731    0.004    0.000    0.004    0.000 {method 'items' of 'dict' objects}
-     6432    0.002    0.000    0.004    0.000 C:\ProgramData\Anaconda3\lib\site-packages\PIL\_binary.py:70(i32be)
-       31    0.000    0.000    0.004    0.000 C:\ProgramData\Anaconda3\lib\genericpath.py:27(isfile)
-       33    0.002    0.000    0.004    0.000 C:\Users\Media Markt\Desktop\Vita Online\LoL\runescrape\GUI.py:388(match_champion)
-     3216    0.003    0.000    0.003    0.000 {method 'seek' of '_io.BufferedReader' objects}
-     1072    0.001    0.000    0.003    0.000 C:\ProgramData\Anaconda3\lib\site-packages\PIL\PngImagePlugin.py:642(load_read)
-     7504    0.003    0.000    0.003    0.000 {built-in method _struct.unpack_from}
-     1072    0.003    0.000    0.003    0.000 {built-in method PIL._imaging.new}
-       27    0.000    0.000    0.003    0.000 C:\ProgramData\Anaconda3\lib\logging\__init__.py:1516(handle)
-     3600    0.002    0.000    0.003    0.000 C:\ProgramData\Anaconda3\lib\site-packages\PIL\Image.py:781(load)
-       27    0.000    0.000    0.003    0.000 C:\ProgramData\Anaconda3\lib\logging\__init__.py:1570(callHandlers)
-     1072    0.001    0.000    0.003    0.000 C:\ProgramData\Anaconda3\lib\site-packages\PIL\BmpImagePlugin.py:49(_dib_accept)
-     2181    0.002    0.000    0.003    0.000 C:\ProgramData\Anaconda3\lib\tkinter\__init__.py:584(destroy)
-       27    0.000    0.000    0.003    0.000 C:\ProgramData\Anaconda3\lib\logging\__init__.py:881(handle)
-     4971    0.002    0.000    0.002    0.000 C:\ProgramData\Anaconda3\lib\site-packages\soupsieve\css_match.py:484(get_tag_ns)
-     4966    0.002    0.000    0.002    0.000 C:\ProgramData\Anaconda3\lib\site-packages\soupsieve\css_match.py:88(is_doc)
-       27    0.000    0.000    0.002    0.000 C:\ProgramData\Anaconda3\lib\logging\__init__.py:1118(emit)
-       27    0.000    0.000    0.002    0.000 C:\ProgramData\Anaconda3\lib\logging\__init__.py:1013(emit)
-     1904    0.002    0.000    0.002    0.000 C:\ProgramData\Anaconda3\lib\site-packages\PIL\Image.py:501(__init__)
-     2144    0.001    0.000    0.002    0.000 C:\ProgramData\Anaconda3\lib\site-packages\PIL\PngImagePlugin.py:92(_crc32)
-     1072    0.002    0.000    0.002    0.000 C:\ProgramData\Anaconda3\lib\site-packages\PIL\PngImagePlugin.py:290(__init__)
+        2    0.000    0.000    0.342    0.171 C:\Users\Media Markt\Desktop\Vita Online\LoL\runescrape\GUI.py:396(roles_button)
+    15220    0.035    0.000    0.334    0.000 C:\ProgramData\Anaconda3\lib\site-packages\bs4\__init__.py:606(handle_starttag)
+     3198    0.314    0.000    0.315    0.000 {method 'call' of '_tkinter.tkapp' objects}
+        8    0.001    0.000    0.267    0.033 C:\Users\Media Markt\Desktop\Vita Online\LoL\runescrape\GUI.py:238(update_images)
+       24    0.002    0.000    0.265    0.011 C:\Users\Media Markt\Desktop\Vita Online\LoL\runescrape\GUI.py:138(__init__)
+      270    0.003    0.000    0.232    0.001 C:\Users\Media Markt\Desktop\Vita Online\LoL\runescrape\GUI.py:34(__init__)
+      744    0.001    0.000    0.225    0.000 C:\ProgramData\Anaconda3\lib\site-packages\bs4\element.py:1682(find_all)
+      744    0.019    0.000    0.224    0.000 C:\ProgramData\Anaconda3\lib\site-packages\bs4\element.py:694(_find_all)
+    12325    0.028    0.000    0.196    0.000 C:\ProgramData\Anaconda3\lib\html\parser.py:386(parse_endtag)
+    30908    0.054    0.000    0.184    0.000 C:\ProgramData\Anaconda3\lib\site-packages\bs4\__init__.py:468(endData)
+    15229    0.107    0.000    0.182    0.000 C:\ProgramData\Anaconda3\lib\site-packages\bs4\element.py:989(__init__)
+    40559    0.028    0.000    0.182    0.000 C:\ProgramData\Anaconda3\lib\site-packages\bs4\element.py:1950(search)
+        1    0.000    0.000    0.176    0.176 C:\Users\Media Markt\Desktop\Vita Online\LoL\runescrape\GUI.py:318(__init__)
+        1    0.000    0.000    0.172    0.172 C:\Users\Media Markt\Desktop\Vita Online\LoL\runescrape\GUI.py:360(<lambda>)
+        1    0.000    0.000    0.171    0.171 C:\Users\Media Markt\Desktop\Vita Online\LoL\runescrape\GUI.py:382(<lambda>)
+    15183    0.034    0.000    0.161    0.000 C:\ProgramData\Anaconda3\lib\site-packages\bs4\builder\_htmlparser.py:141(handle_endtag)
+   689/19    0.004    0.000    0.159    0.008 C:\ProgramData\Anaconda3\lib\tkinter\__init__.py:2302(destroy)
+       40    0.000    0.000    0.158    0.004 C:\Users\Media Markt\Desktop\Vita Online\LoL\runescrape\ChampionPage.py:119(get_groups)
+       40    0.000    0.000    0.157    0.004 C:\Users\Media Markt\Desktop\Vita Online\LoL\runescrape\ChampionPage.py:113(get_runes)
+    16117    0.024    0.000    0.140    0.000 C:\ProgramData\Anaconda3\lib\site-packages\bs4\element.py:1895(search_tag)
+    15121    0.010    0.000    0.127    0.000 C:\ProgramData\Anaconda3\lib\site-packages\bs4\__init__.py:644(handle_endtag)
+      302    0.002    0.000    0.125    0.000 C:\ProgramData\Anaconda3\lib\site-packages\PIL\ImageTk.py:85(__init__)
+      302    0.002    0.000    0.117    0.000 C:\ProgramData\Anaconda3\lib\site-packages\PIL\ImageTk.py:151(paste)
+37831/23233    0.053    0.000    0.098    0.000 C:\ProgramData\Anaconda3\lib\site-packages\bs4\element.py:1983(_matches)
+   107441    0.088    0.000    0.088    0.000 {method 'match' of 're.Pattern' objects}
+    21941    0.028    0.000    0.081    0.000 C:\ProgramData\Anaconda3\lib\site-packages\bs4\__init__.py:510(object_was_parsed)
+       64    0.079    0.001    0.079    0.001 C:\Users\Media Markt\Desktop\Vita Online\LoL\runescrape\GUI.py:18(round_pictures)
+        1    0.000    0.000    0.069    0.069 C:\ProgramData\Anaconda3\lib\site-packages\bs4\element.py:1754(select)
+        1    0.000    0.000    0.069    0.069 C:\ProgramData\Anaconda3\lib\site-packages\soupsieve\__init__.py:111(select)
+        1    0.000    0.000    0.069    0.069 C:\ProgramData\Anaconda3\lib\site-packages\soupsieve\css_match.py:1518(select)
+        2    0.000    0.000    0.069    0.034 C:\ProgramData\Anaconda3\lib\site-packages\soupsieve\css_match.py:1523(iselect)
+        2    0.002    0.001    0.069    0.034 C:\ProgramData\Anaconda3\lib\site-packages\soupsieve\css_match.py:1391(select)
+      689    0.003    0.000    0.067    0.000 C:\ProgramData\Anaconda3\lib\tkinter\__init__.py:2286(__init__)
+   496664    0.048    0.000    0.066    0.000 {built-in method builtins.isinstance}
+      325    0.000    0.000    0.060    0.000 C:\ProgramData\Anaconda3\lib\site-packages\bs4\element.py:1657(find)
+      276    0.000    0.000    0.057    0.000 C:\ProgramData\Anaconda3\lib\tkinter\__init__.py:2748(__init__)
+     4965    0.003    0.000    0.056    0.000 C:\ProgramData\Anaconda3\lib\site-packages\soupsieve\css_match.py:1422(match)
+    55701    0.035    0.000    0.056    0.000 C:\ProgramData\Anaconda3\lib\_markupbase.py:48(updatepos)
+    13022    0.034    0.000    0.054    0.000 C:\ProgramData\Anaconda3\lib\site-packages\bs4\builder\__init__.py:265(_replace_cdata_list_attribute_values)
+4971/4965    0.006    0.000    0.049    0.000 C:\ProgramData\Anaconda3\lib\site-packages\soupsieve\css_match.py:1307(match_selectors)
+    15220    0.013    0.000    0.047    0.000 C:\ProgramData\Anaconda3\lib\html\parser.py:352(check_for_whole_start_tag)
+      334    0.002    0.000    0.046    0.000 C:\ProgramData\Anaconda3\lib\site-packages\PIL\Image.py:2770(open)
+    59111    0.045    0.000    0.045    0.000 C:\ProgramData\Anaconda3\lib\site-packages\bs4\element.py:125(setup)
+      366    0.004    0.000    0.045    0.000 C:\ProgramData\Anaconda3\lib\site-packages\PIL\ImageFile.py:140(load)
+    21941    0.018    0.000    0.043    0.000 C:\ProgramData\Anaconda3\lib\site-packages\bs4\element.py:838(__new__)
+    19854    0.004    0.000    0.042    0.000 C:\ProgramData\Anaconda3\lib\html\__init__.py:122(unescape)
+        1    0.000    0.000    0.041    0.041 C:\ProgramData\Anaconda3\lib\tkinter\__init__.py:2003(__init__)
+        1    0.041    0.041    0.041    0.041 {built-in method _tkinter.create}
+     2842    0.021    0.000    0.038    0.000 {method 'sub' of 're.Pattern' objects}
+      604    0.001    0.000    0.037    0.000 C:\ProgramData\Anaconda3\lib\pathlib.py:1376(is_file)
+      617    0.034    0.000    0.036    0.000 {built-in method nt.stat}
+      604    0.000    0.000    0.036    0.000 C:\ProgramData\Anaconda3\lib\pathlib.py:1173(stat)
+    15121    0.022    0.000    0.036    0.000 C:\ProgramData\Anaconda3\lib\site-packages\bs4\__init__.py:578(_popToTag)
+     4971    0.003    0.000    0.034    0.000 C:\ProgramData\Anaconda3\lib\site-packages\soupsieve\css_match.py:698(match_tag)
+      160    0.002    0.000    0.034    0.000 C:\Users\Media Markt\Desktop\Vita Online\LoL\runescrape\ChampionPage.py:36(get_stones)
+    12574    0.029    0.000    0.030    0.000 C:\ProgramData\Anaconda3\lib\site-packages\bs4\__init__.py:538(_linkage_fixer)
+        1    0.000    0.000    0.029    0.029 C:\ProgramData\Anaconda3\lib\tkinter\__init__.py:2058(destroy)
+      334    0.027    0.000    0.027    0.000 {method 'decode' of 'ImagingDecoder' objects}
+     4971    0.004    0.000    0.022    0.000 C:\ProgramData\Anaconda3\lib\site-packages\soupsieve\css_match.py:689(match_tagname)
+    40459    0.022    0.000    0.022    0.000 {method 'search' of 're.Pattern' objects}
+      334    0.003    0.000    0.020    0.000 C:\ProgramData\Anaconda3\lib\site-packages\PIL\Image.py:2824(_open_core)
+    88029    0.019    0.000    0.019    0.000 {method 'group' of 're.Match' objects}
+    47577    0.008    0.000    0.019    0.000 C:\ProgramData\Anaconda3\lib\abc.py:137(__instancecheck__)
+    11263    0.013    0.000    0.018    0.000 C:\ProgramData\Anaconda3\lib\site-packages\soupsieve\util.py:44(lower)
+    21706    0.009    0.000    0.017    0.000 C:\ProgramData\Anaconda3\lib\site-packages\bs4\builder\_htmlparser.py:159(handle_data)
+      343    0.017    0.000    0.017    0.000 {built-in method io.open}
+    39854    0.012    0.000    0.017    0.000 C:\ProgramData\Anaconda3\lib\html\__init__.py:91(_replace_charref)
+    49869    0.016    0.000    0.016    0.000 {method 'count' of 'str' objects}
+        1    0.001    0.001    0.016    0.016 C:\Users\Media Markt\Desktop\Vita Online\LoL\runescrape\ChampionList.py:52(parse_champions)
+    15229    0.013    0.000    0.016    0.000 C:\ProgramData\Anaconda3\lib\site-packages\bs4\__init__.py:458(pushTag)
+      334    0.001    0.000    0.015    0.000 C:\ProgramData\Anaconda3\lib\site-packages\PIL\ImageFile.py:80(__init__)
+   103014    0.013    0.000    0.013    0.000 {built-in method builtins.hasattr}
+      334    0.002    0.000    0.013    0.000 C:\ProgramData\Anaconda3\lib\site-packages\PIL\PngImagePlugin.py:561(_open)
+    40650    0.006    0.000    0.013    0.000 {built-in method builtins.next}
+    15220    0.010    0.000    0.012    0.000 C:\ProgramData\Anaconda3\lib\site-packages\bs4\__init__.py:448(popTag)
+   134614    0.012    0.000    0.012    0.000 {method 'append' of 'list' objects}
+       80    0.000    0.000    0.011    0.000 C:\Users\Media Markt\Desktop\Vita Online\LoL\runescrape\ChampionPage.py:88(get_stone)
+      192    0.001    0.000    0.011    0.000 C:\ProgramData\Anaconda3\lib\site-packages\PIL\Image.py:831(convert)
+     4966    0.004    0.000    0.011    0.000 C:\ProgramData\Anaconda3\lib\site-packages\soupsieve\css_match.py:206(get_descendants)
+    10478    0.011    0.000    0.011    0.000 {method 'findall' of 're.Pattern' objects}
+    58414    0.010    0.000    0.011    0.000 C:\ProgramData\Anaconda3\lib\site-packages\bs4\element.py:1717(descendants)
+    81431    0.010    0.000    0.010    0.000 {method 'get' of 'dict' objects}
+    47577    0.010    0.000    0.010    0.000 {built-in method _abc._abc_instancecheck}
+     4971    0.003    0.000    0.010    0.000 C:\ProgramData\Anaconda3\lib\site-packages\soupsieve\css_match.py:501(get_tag)
+    32445    0.007    0.000    0.010    0.000 C:\ProgramData\Anaconda3\lib\site-packages\bs4\element.py:1858(_normalize_search_value)
+   128/64    0.001    0.000    0.010    0.000 C:\ProgramData\Anaconda3\lib\site-packages\PIL\Image.py:1786(resize)
+       32    0.000    0.000    0.010    0.000 C:\ProgramData\Anaconda3\lib\tkinter\__init__.py:1491(__setitem__)
+     4971    0.004    0.000    0.010    0.000 C:\ProgramData\Anaconda3\lib\site-packages\soupsieve\css_match.py:648(match_namespace)
+       32    0.000    0.000    0.010    0.000 C:\ProgramData\Anaconda3\lib\tkinter\__init__.py:1478(configure)
+       32    0.000    0.000    0.010    0.000 C:\ProgramData\Anaconda3\lib\tkinter\__init__.py:1466(_configure)
+      394    0.001    0.000    0.009    0.000 C:\ProgramData\Anaconda3\lib\tkinter\__init__.py:2730(__init__)
+      604    0.001    0.000    0.009    0.000 C:\ProgramData\Anaconda3\lib\pathlib.py:1019(__new__)
+    21985    0.006    0.000    0.008    0.000 C:\ProgramData\Anaconda3\lib\site-packages\bs4\__init__.py:654(handle_data)
+    22554    0.008    0.000    0.008    0.000 {built-in method __new__ of type object at 0x00007FFE455779A0}
+    41007    0.008    0.000    0.008    0.000 {method 'startswith' of 'str' objects}
+      604    0.001    0.000    0.007    0.000 C:\ProgramData\Anaconda3\lib\pathlib.py:664(_from_parts)
+    15220    0.006    0.000    0.007    0.000 C:\ProgramData\Anaconda3\lib\site-packages\bs4\element.py:1105(is_empty_element)
+    63665    0.007    0.000    0.007    0.000 {method 'end' of 're.Match' objects}
+    62457    0.007    0.000    0.007    0.000 {method 'lower' of 'str' objects}
+      302    0.001    0.000    0.007    0.000 C:\ProgramData\Anaconda3\lib\tkinter\__init__.py:3540(__init__)
+     3006    0.007    0.000    0.007    0.000 {method 'read' of '_io.BufferedReader' objects}
+     1321    0.001    0.000    0.006    0.000 C:\ProgramData\Anaconda3\lib\site-packages\soupsieve\css_match.py:786(match_classes)
+    16684    0.005    0.000    0.006    0.000 C:\ProgramData\Anaconda3\lib\site-packages\soupsieve\css_match.py:95(is_tag)
+        8    0.000    0.000    0.006    0.001 C:\Users\Media Markt\Desktop\Vita Online\LoL\runescrape\GUI.py:195(add_roles)
+      604    0.001    0.000    0.006    0.000 C:\ProgramData\Anaconda3\lib\pathlib.py:644(_parse_args)
+      302    0.002    0.000    0.006    0.000 C:\ProgramData\Anaconda3\lib\tkinter\__init__.py:3484(__init__)
+     1002    0.002    0.000    0.006    0.000 C:\ProgramData\Anaconda3\lib\site-packages\PIL\PngImagePlugin.py:106(read)
+     1321    0.001    0.000    0.006    0.000 C:\ProgramData\Anaconda3\lib\site-packages\soupsieve\css_match.py:323(get_classes)
+      745    0.001    0.000    0.005    0.000 C:\ProgramData\Anaconda3\lib\site-packages\bs4\element.py:2069(__init__)
+        9    0.000    0.000    0.005    0.001 C:\Users\Media Markt\Desktop\Vita Online\LoL\runescrape\RequestsHandler.py:53(load)
+      668    0.001    0.000    0.005    0.000 C:\ProgramData\Anaconda3\lib\site-packages\PIL\PngImagePlugin.py:138(call)
+      270    0.001    0.000    0.005    0.000 C:\ProgramData\Anaconda3\lib\_markupbase.py:168(parse_comment)
+    15229    0.005    0.000    0.005    0.000 C:\ProgramData\Anaconda3\lib\site-packages\bs4\builder\__init__.py:176(can_be_empty_element)
+     1321    0.001    0.000    0.005    0.000 C:\ProgramData\Anaconda3\lib\site-packages\soupsieve\css_match.py:299(get_attribute_by_name)
+      298    0.000    0.000    0.005    0.000 C:\ProgramData\Anaconda3\lib\site-packages\PIL\ImageTk.py:117(__del__)
+      179    0.000    0.000    0.005    0.000 C:\ProgramData\Anaconda3\lib\site-packages\bs4\builder\_htmlparser.py:86(handle_startendtag)
+    19067    0.005    0.000    0.005    0.000 {method 'rindex' of 'str' objects}
+     1410    0.002    0.000    0.005    0.000 C:\ProgramData\Anaconda3\lib\tkinter\__init__.py:1315(_options)
+      604    0.003    0.000    0.005    0.000 C:\ProgramData\Anaconda3\lib\pathlib.py:63(parse_parts)
+    40657    0.004    0.000    0.004    0.000 {method 'join' of 'str' objects}
+     1096    0.002    0.000    0.004    0.000 C:\ProgramData\Anaconda3\lib\site-packages\bs4\element.py:722(<genexpr>)
+    58860    0.004    0.000    0.004    0.000 C:\ProgramData\Anaconda3\lib\site-packages\bs4\element.py:1334(__bool__)
+      414    0.000    0.000    0.004    0.000 C:\ProgramData\Anaconda3\lib\tkinter\__init__.py:2209(grid_configure)
+      270    0.000    0.000    0.004    0.000 C:\ProgramData\Anaconda3\lib\site-packages\bs4\builder\_htmlparser.py:221(handle_comment)
+      334    0.004    0.000    0.004    0.000 {method 'close' of '_io.BufferedReader' objects}
+      744    0.002    0.000    0.004    0.000 C:\ProgramData\Anaconda3\lib\site-packages\bs4\element.py:1820(__init__)
+     4971    0.002    0.000    0.004    0.000 C:\ProgramData\Anaconda3\lib\_collections_abc.py:657(get)
+    28116    0.004    0.000    0.004    0.000 {method 'start' of 're.Match' objects}
+     2126    0.002    0.000    0.003    0.000 C:\ProgramData\Anaconda3\lib\tkinter\__init__.py:96(_cnfmerge)
+     8058    0.002    0.000    0.003    0.000 C:\ProgramData\Anaconda3\lib\site-packages\bs4\element.py:1291(get)
+      689    0.003    0.000    0.003    0.000 C:\ProgramData\Anaconda3\lib\tkinter\__init__.py:2253(_setup)
+    13023    0.003    0.000    0.003    0.000 {method 'keys' of 'dict' objects}
+    15229    0.003    0.000    0.003    0.000 C:\ProgramData\Anaconda3\lib\site-packages\bs4\builder\__init__.py:399(set_up_substitutions)
+    12325    0.003    0.000    0.003    0.000 C:\ProgramData\Anaconda3\lib\html\parser.py:127(clear_cdata_mode)
+    15220    0.003    0.000    0.003    0.000 C:\ProgramData\Anaconda3\lib\_markupbase.py:40(getpos)
+      334    0.001    0.000    0.003    0.000 C:\ProgramData\Anaconda3\lib\site-packages\PIL\PngImagePlugin.py:668(load_end)
+        1    0.000    0.000    0.003    0.003 C:\Users\Media Markt\Desktop\Vita Online\LoL\runescrape\GUI.py:101(update_names)
+    15229    0.003    0.000    0.003    0.000 {method 'endswith' of 'str' objects}
+      154    0.000    0.000    0.003    0.000 C:\Users\Media Markt\Desktop\Vita Online\LoL\runescrape\GUI.py:117(add_name)
+    32473    0.003    0.000    0.003    0.000 {built-in method builtins.len}
+      154    0.000    0.000    0.003    0.000 C:\ProgramData\Anaconda3\lib\tkinter\__init__.py:2804(insert)
+      557    0.001    0.000    0.003    0.000 C:\ProgramData\Anaconda3\lib\html\parser.py:123(set_cdata_mode)
+    15229    0.003    0.000    0.003    0.000 {method 'pop' of 'list' objects}
+       64    0.003    0.000    0.003    0.000 {method 'resize' of 'ImagingCore' objects}
+     1002    0.002    0.000    0.002    0.000 {method 'tell' of '_io.BufferedReader' objects}
+        9    0.002    0.000    0.002    0.000 {built-in method _pickle.load}
+     4971    0.001    0.000    0.002    0.000 C:\ProgramData\Anaconda3\lib\site-packages\soupsieve\css_match.py:484(get_tag_ns)
+      275    0.000    0.000    0.002    0.000 C:\ProgramData\Anaconda3\lib\tkinter\__init__.py:2125(pack_configure)
+     4966    0.001    0.000    0.002    0.000 C:\ProgramData\Anaconda3\lib\site-packages\soupsieve\css_match.py:88(is_doc)
+      604    0.000    0.000    0.002    0.000 C:\ProgramData\Anaconda3\lib\pathlib.py:714(__fspath__)
+      334    0.001    0.000    0.002    0.000 C:\ProgramData\Anaconda3\lib\site-packages\PIL\PngImagePlugin.py:341(chunk_IHDR)
+      334    0.000    0.000    0.002    0.000 C:\ProgramData\Anaconda3\lib\site-packages\PIL\PngImagePlugin.py:633(load_prepare)
+      677    0.000    0.000    0.002    0.000 C:\ProgramData\Anaconda3\lib\logging\__init__.py:1356(debug)
+       17    0.000    0.000    0.002    0.000 C:\ProgramData\Anaconda3\lib\tkinter\__init__.py:2974(__init__)
+    15220    0.002    0.000    0.002    0.000 {method 'strip' of 'str' objects}
     33176    0.002    0.000    0.002    0.000 {built-in method builtins.ord}
-      832    0.001    0.000    0.002    0.000 C:\ProgramData\Anaconda3\lib\site-packages\PIL\Image.py:526(_new)
-       27    0.000    0.000    0.002    0.000 C:\ProgramData\Anaconda3\lib\html\parser.py:256(parse_html_declaration)
      4971    0.001    0.000    0.002    0.000 C:\ProgramData\Anaconda3\lib\site-packages\soupsieve\css_types.py:312(__iter__)
-     1936    0.002    0.000    0.002    0.000 C:\ProgramData\Anaconda3\lib\pathlib.py:145(splitroot)
-       27    0.000    0.000    0.002    0.000 C:\ProgramData\Anaconda3\lib\site-packages\bs4\builder\_htmlparser.py:230(handle_decl)
-     4971    0.002    0.000    0.002    0.000 C:\ProgramData\Anaconda3\lib\site-packages\soupsieve\css_types.py:116(__getitem__)
-     4185    0.002    0.000    0.002    0.000 {built-in method builtins.getattr}
-     2144    0.001    0.000    0.002    0.000 C:\ProgramData\Anaconda3\lib\site-packages\PIL\_util.py:10(isPath)
-     3872    0.002    0.000    0.002    0.000 {built-in method sys.intern}
-      968    0.002    0.000    0.002    0.000 {method 'new_block' of 'ImagingCore' objects}
-     7056    0.002    0.000    0.002    0.000 {method 'update' of 'dict' objects}
-     1072    0.001    0.000    0.002    0.000 C:\ProgramData\Anaconda3\lib\site-packages\PIL\_binary.py:46(i32le)
-      390    0.001    0.000    0.002    0.000 C:\Users\Media Markt\Desktop\Vita Online\LoL\runescrape\ChampionPage.py:94(__init__)
-       27    0.000    0.000    0.002    0.000 C:\ProgramData\Anaconda3\lib\logging\__init__.py:1476(makeRecord)
-     2859    0.002    0.000    0.002    0.000 {method 'replace' of 'str' objects}
-     1827    0.001    0.000    0.002    0.000 C:\ProgramData\Anaconda3\lib\types.py:164(__get__)
-       27    0.001    0.000    0.001    0.000 C:\ProgramData\Anaconda3\lib\logging\__init__.py:282(__init__)
+      557    0.000    0.000    0.002    0.000 C:\ProgramData\Anaconda3\lib\re.py:232(compile)
+       11    0.000    0.000    0.002    0.000 C:\Users\Media Markt\Desktop\Vita Online\LoL\runescrape\GUI.py:180(add_role)
+      604    0.001    0.000    0.002    0.000 C:\ProgramData\Anaconda3\lib\pathlib.py:704(__str__)
+      334    0.000    0.000    0.002    0.000 C:\ProgramData\Anaconda3\lib\site-packages\PIL\ImageFile.py:274(load_prepare)
+      557    0.001    0.000    0.001    0.000 C:\ProgramData\Anaconda3\lib\re.py:271(_compile)
+      334    0.001    0.000    0.001    0.000 C:\ProgramData\Anaconda3\lib\site-packages\PIL\Image.py:394(_getdecoder)
+        9    0.001    0.000    0.001    0.000 C:\ProgramData\Anaconda3\lib\site-packages\requests\models.py:835(text)
+      334    0.001    0.000    0.001    0.000 C:\ProgramData\Anaconda3\lib\site-packages\PIL\PngImagePlugin.py:144(crc)
+     4971    0.001    0.000    0.001    0.000 C:\ProgramData\Anaconda3\lib\site-packages\soupsieve\css_types.py:116(__getitem__)
+        9    0.000    0.000    0.001    0.000 C:\Users\Media Markt\Desktop\Vita Online\LoL\runescrape\LogFiles.py:92(main_log)
+      128    0.001    0.000    0.001    0.000 {method 'convert' of 'ImagingCore' objects}
+    11747    0.001    0.000    0.001    0.000 {method 'items' of 'dict' objects}
+        9    0.000    0.000    0.001    0.000 C:\ProgramData\Anaconda3\lib\logging\__init__.py:1491(_log)
       367    0.000    0.000    0.001    0.000 C:\ProgramData\Anaconda3\lib\site-packages\bs4\element.py:1187(get_text)
-     1072    0.001    0.000    0.001    0.000 C:\ProgramData\Anaconda3\lib\site-packages\PIL\PngImagePlugin.py:356(chunk_IDAT)
-      208    0.000    0.000    0.001    0.000 C:\ProgramData\Anaconda3\lib\site-packages\PIL\Image.py:1076(copy)
-      968    0.001    0.000    0.001    0.000 {method 'convert2' of 'ImagingCore' objects}
+     2004    0.001    0.000    0.001    0.000 C:\ProgramData\Anaconda3\lib\site-packages\PIL\_binary.py:70(i32be)
      4971    0.001    0.000    0.001    0.000 C:\ProgramData\Anaconda3\lib\site-packages\soupsieve\css_match.py:245(get_tag_name)
-     1936    0.001    0.000    0.001    0.000 C:\ProgramData\Anaconda3\lib\pathlib.py:687(_format_parsed_parts)
-     1072    0.001    0.000    0.001    0.000 {built-in method PIL._imaging.zip_decoder}
-      104    0.000    0.000    0.001    0.000 C:\ProgramData\Anaconda3\lib\site-packages\PIL\Image.py:1390(paste)
-     2198    0.001    0.000    0.001    0.000 {method 'find' of 'str' objects}
+      334    0.000    0.000    0.001    0.000 C:\ProgramData\Anaconda3\lib\site-packages\PIL\PngImagePlugin.py:642(load_read)
+     1002    0.001    0.000    0.001    0.000 {method 'seek' of '_io.BufferedReader' objects}
+      120    0.000    0.000    0.001    0.000 C:\Users\Media Markt\Desktop\Vita Online\LoL\runescrape\ChampionPage.py:94(__init__)
+      334    0.001    0.000    0.001    0.000 {built-in method PIL._imaging.new}
+     2338    0.001    0.000    0.001    0.000 {built-in method _struct.unpack_from}
+       13    0.000    0.000    0.001    0.000 C:\ProgramData\Anaconda3\lib\genericpath.py:27(isfile)
       367    0.000    0.000    0.001    0.000 C:\ProgramData\Anaconda3\lib\site-packages\bs4\element.py:1204(<listcomp>)
-     2144    0.001    0.000    0.001    0.000 {method 'decode' of 'bytes' objects}
-     2144    0.001    0.000    0.001    0.000 {built-in method zlib.crc32}
-       27    0.000    0.000    0.001    0.000 C:\ProgramData\Anaconda3\lib\logging\__init__.py:858(format)
-     1636    0.001    0.000    0.001    0.000 C:\ProgramData\Anaconda3\lib\site-packages\bs4\element.py:308(_last_descendant)
-       27    0.000    0.000    0.001    0.000 C:\ProgramData\Anaconda3\lib\logging\__init__.py:595(format)
-      968    0.001    0.000    0.001    0.000 C:\ProgramData\Anaconda3\lib\site-packages\PIL\ImageTk.py:125(__str__)
-     1936    0.001    0.000    0.001    0.000 C:\ProgramData\Anaconda3\lib\pathlib.py:1029(_init)
+        1    0.000    0.000    0.001    0.001 C:\Users\Media Markt\Desktop\Vita Online\LoL\runescrape\GUI.py:283(__init__)
+     1116    0.001    0.000    0.001    0.000 C:\ProgramData\Anaconda3\lib\site-packages\PIL\Image.py:781(load)
+      334    0.000    0.000    0.001    0.000 C:\ProgramData\Anaconda3\lib\site-packages\PIL\BmpImagePlugin.py:49(_dib_accept)
+      690    0.001    0.000    0.001    0.000 C:\ProgramData\Anaconda3\lib\tkinter\__init__.py:584(destroy)
       734    0.000    0.000    0.001    0.000 C:\ProgramData\Anaconda3\lib\site-packages\bs4\element.py:1150(_all_strings)
-     2180    0.001    0.000    0.001    0.000 C:\ProgramData\Anaconda3\lib\tkinter\__init__.py:2295(<listcomp>)
-     1072    0.001    0.000    0.001    0.000 {method 'sort' of 'list' objects}
-     1942    0.001    0.000    0.001    0.000 {method 'split' of 'str' objects}
-     1072    0.001    0.000    0.001    0.000 C:\ProgramData\Anaconda3\lib\site-packages\PIL\ImageFile.py:536(_safe_read)
+        9    0.000    0.000    0.001    0.000 C:\ProgramData\Anaconda3\lib\logging\__init__.py:1516(handle)
+        9    0.000    0.000    0.001    0.000 C:\ProgramData\Anaconda3\lib\logging\__init__.py:1570(callHandlers)
      4971    0.001    0.000    0.001    0.000 C:\ProgramData\Anaconda3\lib\site-packages\soupsieve\css_match.py:479(supports_namespaces)
-       27    0.000    0.000    0.001    0.000 C:\ProgramData\Anaconda3\lib\site-packages\bs4\element.py:1353(__getattr__)
-     1072    0.001    0.000    0.001    0.000 C:\ProgramData\Anaconda3\lib\site-packages\PIL\Image.py:2750(_decompression_bomb_check)
-     7056    0.001    0.000    0.001    0.000 C:\ProgramData\Anaconda3\lib\site-packages\PIL\Image.py:522(size)
-       27    0.000    0.000    0.001    0.000 C:\ProgramData\Anaconda3\lib\logging\__init__.py:1002(flush)
-     2171    0.001    0.000    0.001    0.000 C:\ProgramData\Anaconda3\lib\logging\__init__.py:1614(isEnabledFor)
-     2528    0.001    0.000    0.001    0.000 {method 'pixel_access' of 'ImagingCore' objects}
-     3590    0.001    0.000    0.001    0.000 {built-in method _tkinter._flatten}
-     4288    0.001    0.000    0.001    0.000 C:\ProgramData\Anaconda3\lib\site-packages\PIL\_binary.py:17(i8)
-       27    0.001    0.000    0.001    0.000 {method 'flush' of '_io.TextIOWrapper' objects}
-     1072    0.001    0.000    0.001    0.000 {built-in method builtins.min}
-     5884    0.001    0.000    0.001    0.000 {built-in method builtins.callable}
-     5052    0.001    0.000    0.001    0.000 {built-in method builtins.iter}
-     1072    0.001    0.000    0.001    0.000 {method 'setimage' of 'ImagingDecoder' objects}
-       27    0.000    0.000    0.001    0.000 C:\ProgramData\Anaconda3\lib\logging\__init__.py:528(formatTime)
-     1072    0.001    0.000    0.001    0.000 C:\Users\Media Markt\Desktop\Vita Online\LoL\runescrape\ChampionPage.py:17(__init__)
-     1072    0.001    0.000    0.001    0.000 C:\ProgramData\Anaconda3\lib\site-packages\PIL\BmpImagePlugin.py:45(_accept)
-       84    0.000    0.000    0.001    0.000 C:\ProgramData\Anaconda3\lib\site-packages\requests\cookies.py:408(__setstate__)
-        6    0.000    0.000    0.001    0.000 C:\ProgramData\Anaconda3\lib\tkinter\__init__.py:1388(_substitute)
+      334    0.001    0.000    0.001    0.000 C:\ProgramData\Anaconda3\lib\site-packages\PIL\PngImagePlugin.py:290(__init__)
+        9    0.000    0.000    0.001    0.000 C:\ProgramData\Anaconda3\lib\logging\__init__.py:881(handle)
+      668    0.000    0.000    0.001    0.000 C:\ProgramData\Anaconda3\lib\site-packages\PIL\PngImagePlugin.py:92(_crc32)
+        9    0.000    0.000    0.001    0.000 C:\ProgramData\Anaconda3\lib\html\parser.py:256(parse_html_declaration)
+        9    0.000    0.000    0.001    0.000 C:\ProgramData\Anaconda3\lib\logging\__init__.py:1118(emit)
+        9    0.000    0.000    0.001    0.000 C:\ProgramData\Anaconda3\lib\logging\__init__.py:1013(emit)
+        1    0.000    0.000    0.001    0.001 C:\Users\Media Markt\Desktop\Vita Online\LoL\runescrape\GUI.py:213(__init__)
+        9    0.000    0.000    0.001    0.000 C:\ProgramData\Anaconda3\lib\site-packages\bs4\builder\_htmlparser.py:230(handle_decl)
+     1078    0.001    0.000    0.001    0.000 C:\ProgramData\Anaconda3\lib\site-packages\bs4\element.py:308(_last_descendant)
+      256    0.000    0.000    0.001    0.000 C:\ProgramData\Anaconda3\lib\site-packages\PIL\Image.py:526(_new)
+      590    0.001    0.000    0.001    0.000 C:\ProgramData\Anaconda3\lib\site-packages\PIL\Image.py:501(__init__)
+     1305    0.001    0.000    0.001    0.000 {built-in method builtins.getattr}
+      520    0.001    0.000    0.001    0.000 C:\Users\Media Markt\Desktop\Vita Online\LoL\runescrape\ChampionPage.py:32(__init__)
+     1208    0.001    0.000    0.001    0.000 {built-in method sys.intern}
+      302    0.001    0.000    0.001    0.000 {method 'new_block' of 'ImagingCore' objects}
+      604    0.001    0.000    0.001    0.000 C:\ProgramData\Anaconda3\lib\pathlib.py:145(splitroot)
+      334    0.000    0.000    0.001    0.000 C:\ProgramData\Anaconda3\lib\site-packages\PIL\_binary.py:46(i32le)
+     4998    0.001    0.000    0.001    0.000 {built-in method builtins.iter}
+      668    0.000    0.000    0.001    0.000 C:\ProgramData\Anaconda3\lib\site-packages\PIL\_util.py:10(isPath)
         1    0.000    0.000    0.001    0.001 C:\ProgramData\Anaconda3\lib\tkinter\__init__.py:2665(__init__)
-       27    0.000    0.000    0.001    0.000 C:\ProgramData\Anaconda3\lib\site-packages\bs4\__init__.py:405(reset)
-     1072    0.001    0.000    0.001    0.000 C:\ProgramData\Anaconda3\lib\site-packages\PIL\PngImagePlugin.py:131(close)
-     6686    0.001    0.000    0.001    0.000 C:\ProgramData\Anaconda3\lib\site-packages\bs4\element.py:881(name)
-     2059    0.000    0.000    0.000    0.000 {built-in method nt.fspath}
-       45    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\tkinter\__init__.py:1357(_register)
-     1072    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\site-packages\PIL\PngImagePlugin.py:101(__init__)
-      768    0.000    0.000    0.000    0.000 {method 'index' of 'list' objects}
-     1963    0.000    0.000    0.000    0.000 {built-in method _stat.S_ISREG}
-       78    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\tkinter\__init__.py:1614(grid_propagate)
-     1827    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\enum.py:628(value)
-      208    0.000    0.000    0.000    0.000 {method 'copy' of 'ImagingCore' objects}
+      897    0.000    0.000    0.000    0.000 {method 'replace' of 'str' objects}
+      557    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\types.py:164(__get__)
+     2218    0.000    0.000    0.000    0.000 {method 'update' of 'dict' objects}
+      334    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\site-packages\PIL\PngImagePlugin.py:356(chunk_IDAT)
+      334    0.000    0.000    0.000    0.000 {built-in method PIL._imaging.zip_decoder}
+       64    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\site-packages\PIL\Image.py:1076(copy)
+      302    0.000    0.000    0.000    0.000 {method 'convert2' of 'ImagingCore' objects}
+        9    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\logging\__init__.py:1476(makeRecord)
+       32    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\site-packages\PIL\Image.py:1390(paste)
+      604    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\pathlib.py:687(_format_parsed_parts)
+        5    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\tkinter\__init__.py:1388(_substitute)
+        9    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\logging\__init__.py:282(__init__)
+      686    0.000    0.000    0.000    0.000 {method 'find' of 'str' objects}
+      668    0.000    0.000    0.000    0.000 {method 'decode' of 'bytes' objects}
+      668    0.000    0.000    0.000    0.000 {built-in method zlib.crc32}
+      334    0.000    0.000    0.000    0.000 {method 'sort' of 'list' objects}
+      302    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\site-packages\PIL\ImageTk.py:125(__str__)
+        9    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\site-packages\bs4\element.py:1353(__getattr__)
+        9    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\logging\__init__.py:858(format)
+      689    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\tkinter\__init__.py:2295(<listcomp>)
         1    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\tkinter\__init__.py:2067(readprofile)
-       28    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\ntpath.py:212(basename)
-     1072    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\site-packages\PIL\TiffImagePlugin.py:256(_accept)
-     1072    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\site-packages\PIL\Image.py:322(preinit)
-       28    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\ntpath.py:178(split)
-       42    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\site-packages\requests\models.py:657(__setstate__)
-     1156    0.000    0.000    0.000    0.000 {method 'rfind' of 'str' objects}
-     1072    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\site-packages\PIL\PngImagePlugin.py:548(_accept)
-       27    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\logging\__init__.py:1446(findCaller)
-      390    0.000    0.000    0.000    0.000 C:\Users\Media Markt\Desktop\Vita Online\LoL\runescrape\ChampionPage.py:85(__init__)
-      104    0.000    0.000    0.000    0.000 {method 'paste' of 'ImagingCore' objects}
-     1072    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\site-packages\PIL\GifImagePlugin.py:38(_accept)
-     1963    0.000    0.000    0.000    0.000 {method 'reverse' of 'list' objects}
-     1937    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\tkinter\__init__.py:3503(__str__)
-     1072    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\site-packages\PIL\JpegImagePlugin.py:328(_accept)
-     1322    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\site-packages\soupsieve\css_match.py:836(match_nth)
-       78    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\tkinter\__init__.py:504(get)
-       27    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\site-packages\bs4\builder\__init__.py:48(lookup)
-     1690    0.000    0.000    0.000    0.000 C:\Users\Media Markt\Desktop\Vita Online\LoL\runescrape\ChampionPage.py:32(__init__)
-       33    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\tkinter\__init__.py:482(get)
-      111    0.000    0.000    0.000    0.000 {method 'globalgetvar' of '_tkinter.tkapp' objects}
-     1322    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\site-packages\bs4\element.py:199(_is_xml)
-       84    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\threading.py:75(RLock)
-     2182    0.000    0.000    0.000    0.000 {method 'values' of 'dict' objects}
-       27    0.000    0.000    0.000    0.000 {built-in method time.localtime}
-       27    0.000    0.000    0.000    0.000 {method 'write' of '_io.TextIOWrapper' objects}
-       27    0.000    0.000    0.000    0.000 {built-in method time.strftime}
-     1072    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\site-packages\PIL\PpmImagePlugin.py:39(_accept)
-      156    0.000    0.000    0.000    0.000 {method 'getint' of '_tkinter.tkapp' objects}
-       28    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\ntpath.py:201(splitext)
-       66    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\tkinter\__init__.py:1394(getint_event)
-      964    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\tkinter\__init__.py:3504(__del__)
-       27    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\site-packages\bs4\builder\_htmlparser.py:61(__init__)
-       47    0.000    0.000    0.000    0.000 {method 'deletecommand' of '_tkinter.tkapp' objects}
-      504    0.000    0.000    0.000    0.000 {built-in method builtins.setattr}
-       27    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\site-packages\bs4\builder\_htmlparser.py:277(__init__)
-     1072    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\site-packages\PIL\ImageFile.py:67(_tilesort)
-      968    0.000    0.000    0.000    0.000 {method 'isblock' of 'ImagingCore' objects}
-     1072    0.000    0.000    0.000    0.000 {method 'cleanup' of 'ImagingDecoder' objects}
-       28    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\genericpath.py:121(_splitext)
+        9    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\logging\__init__.py:595(format)
+      609    0.000    0.000    0.000    0.000 {method 'split' of 'str' objects}
         2    0.000    0.000    0.000    0.000 {built-in method builtins.print}
+      334    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\site-packages\PIL\ImageFile.py:536(_safe_read)
+     2196    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\site-packages\PIL\Image.py:522(size)
+      334    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\site-packages\PIL\Image.py:2750(_decompression_bomb_check)
         4    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\site-packages\ipykernel\iostream.py:384(write)
-       57    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\site-packages\bs4\builder\_htmlparser.py:202(handle_entityref)
-       27    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\site-packages\bs4\element.py:102(__new__)
-      312    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\site-packages\PIL\Image.py:104(isImageType)
-       36    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\ntpath.py:122(splitdrive)
-       27    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\html\parser.py:87(__init__)
+      782    0.000    0.000    0.000    0.000 {method 'pixel_access' of 'ImagingCore' objects}
+     1322    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\site-packages\bs4\element.py:199(_is_xml)
+      677    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\logging\__init__.py:1614(isEnabledFor)
+     1336    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\site-packages\PIL\_binary.py:17(i8)
+      604    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\pathlib.py:1029(_init)
         5    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\site-packages\ipykernel\iostream.py:197(schedule)
-       27    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\ntpath.py:44(normcase)
-      832    0.000    0.000    0.000    0.000 {method 'copy' of 'dict' objects}
-      6/1    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\site-packages\soupsieve\css_match.py:764(match_relations)
-       27    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\encodings\cp1252.py:18(encode)
-      6/1    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\site-packages\soupsieve\css_match.py:710(match_past_relations)
-       27    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\logging\__init__.py:579(formatMessage)
-       27    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\html\parser.py:96(reset)
+      334    0.000    0.000    0.000    0.000 {method 'setimage' of 'ImagingDecoder' objects}
+        9    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\logging\__init__.py:1002(flush)
+     1130    0.000    0.000    0.000    0.000 {built-in method _tkinter._flatten}
+      334    0.000    0.000    0.000    0.000 C:\Users\Media Markt\Desktop\Vita Online\LoL\runescrape\ChampionPage.py:17(__init__)
+      334    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\site-packages\PIL\BmpImagePlugin.py:45(_accept)
+      334    0.000    0.000    0.000    0.000 {built-in method builtins.min}
+       19    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\tkinter\__init__.py:1357(_register)
+     2780    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\site-packages\bs4\element.py:881(name)
+     1322    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\site-packages\soupsieve\css_match.py:836(match_nth)
+     1862    0.000    0.000    0.000    0.000 {built-in method builtins.callable}
+        9    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\logging\__init__.py:528(formatTime)
+        9    0.000    0.000    0.000    0.000 {method 'flush' of '_io.TextIOWrapper' objects}
         5    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\site-packages\zmq\sugar\socket.py:342(send)
-      104    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\site-packages\PIL\Image.py:587(_ensure_mutable)
-       27    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\logging\__init__.py:573(usesTime)
-       54    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\logging\__init__.py:838(acquire)
-        6    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\tkinter\__init__.py:1340(nametowidget)
-       27    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\logging\__init__.py:421(format)
-       27    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\site-packages\bs4\builder\__init__.py:121(__init__)
-       48    0.000    0.000    0.000    0.000 {method 'createcommand' of '_tkinter.tkapp' objects}
-      130    0.000    0.000    0.000    0.000 C:\Users\Media Markt\Desktop\Vita Online\LoL\runescrape\ChampionPage.py:169(get_runes_set)
-        6    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\tkinter\__init__.py:2786(curselection)
-      188    0.000    0.000    0.000    0.000 {method 'remove' of 'list' objects}
+      655    0.000    0.000    0.000    0.000 {built-in method nt.fspath}
+      557    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\enum.py:628(value)
+        2    0.000    0.000    0.000    0.000 C:\Users\Media Markt\Desktop\Vita Online\LoL\runescrape\GUI.py:293(create_game_mode_button)
+      334    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\site-packages\PIL\TiffImagePlugin.py:256(_accept)
+      334    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\site-packages\PIL\PngImagePlugin.py:131(close)
+      334    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\site-packages\PIL\PngImagePlugin.py:101(__init__)
+      613    0.000    0.000    0.000    0.000 {built-in method _stat.S_ISREG}
+      334    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\site-packages\PIL\Image.py:322(preinit)
+       64    0.000    0.000    0.000    0.000 {method 'copy' of 'ImagingCore' objects}
+      120    0.000    0.000    0.000    0.000 C:\Users\Media Markt\Desktop\Vita Online\LoL\runescrape\ChampionPage.py:85(__init__)
+      364    0.000    0.000    0.000    0.000 {method 'rfind' of 'str' objects}
+       55    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\tkinter\__init__.py:1394(getint_event)
+        9    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\site-packages\bs4\__init__.py:405(reset)
+       89    0.000    0.000    0.000    0.000 {method 'getint' of '_tkinter.tkapp' objects}
+      6/1    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\site-packages\soupsieve\css_match.py:764(match_relations)
+      6/1    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\site-packages\soupsieve\css_match.py:710(match_past_relations)
+      334    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\site-packages\PIL\GifImagePlugin.py:38(_accept)
+       10    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\ntpath.py:212(basename)
+       32    0.000    0.000    0.000    0.000 {method 'paste' of 'ImagingCore' objects}
+      334    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\site-packages\PIL\PngImagePlugin.py:548(_accept)
+        9    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\logging\__init__.py:1446(findCaller)
+      613    0.000    0.000    0.000    0.000 {method 'reverse' of 'list' objects}
+      334    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\site-packages\PIL\JpegImagePlugin.py:328(_accept)
+       10    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\ntpath.py:178(split)
+       22    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\site-packages\requests\cookies.py:408(__setstate__)
+      605    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\tkinter\__init__.py:3503(__str__)
+       11    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\site-packages\requests\models.py:657(__setstate__)
+      691    0.000    0.000    0.000    0.000 {method 'values' of 'dict' objects}
+       24    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\tkinter\__init__.py:1614(grid_propagate)
+        9    0.000    0.000    0.000    0.000 {built-in method time.localtime}
+        9    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\site-packages\bs4\builder\__init__.py:48(lookup)
+      334    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\site-packages\PIL\PpmImagePlugin.py:39(_accept)
+       24    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\tkinter\__init__.py:504(get)
+      334    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\site-packages\PIL\ImageFile.py:67(_tilesort)
+      298    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\tkinter\__init__.py:3504(__del__)
         1    0.000    0.000    0.000    0.000 C:\Users\Media Markt\Desktop\Vita Online\LoL\runescrape\GUI.py:91(__init__)
-       27    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\logging\__init__.py:418(usesTime)
-       27    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\logging\__init__.py:154(<lambda>)
-       27    0.000    0.000    0.000    0.000 {built-in method _codecs.charmap_encode}
-       27    0.000    0.000    0.000    0.000 C:\Users\Media Markt\Desktop\Vita Online\LoL\runescrape\RequestsHandler.py:31(__init__)
+        5    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\tkinter\__init__.py:1340(nametowidget)
+        9    0.000    0.000    0.000    0.000 {built-in method time.strftime}
+      334    0.000    0.000    0.000    0.000 {method 'cleanup' of 'ImagingDecoder' objects}
+       22    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\site-packages\bs4\builder\_htmlparser.py:202(handle_entityref)
+      302    0.000    0.000    0.000    0.000 {method 'isblock' of 'ImagingCore' objects}
+        9    0.000    0.000    0.000    0.000 {method 'write' of '_io.TextIOWrapper' objects}
+       21    0.000    0.000    0.000    0.000 {method 'deletecommand' of '_tkinter.tkapp' objects}
+       10    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\ntpath.py:201(splitext)
+        9    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\site-packages\bs4\builder\_htmlparser.py:61(__init__)
       154    0.000    0.000    0.000    0.000 C:\Users\Media Markt\Desktop\Vita Online\LoL\runescrape\ChampionList.py:25(__init__)
         4    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\tkinter\__init__.py:299(__init__)
-       54    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\logging\__init__.py:845(release)
-       79    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\site-packages\bs4\element.py:1708(children)
+        5    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\tkinter\__init__.py:2786(curselection)
+       96    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\site-packages\PIL\Image.py:104(isImageType)
+      132    0.000    0.000    0.000    0.000 {built-in method builtins.setattr}
+        9    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\site-packages\bs4\builder\_htmlparser.py:277(__init__)
+        9    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\site-packages\bs4\element.py:102(__new__)
+       18    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\ntpath.py:122(splitdrive)
         1    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\tkinter\__init__.py:2770(__init__)
-       27    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\logging\__init__.py:117(getLevelName)
-       27    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\html\parser.py:113(close)
-        1    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\site-packages\soupsieve\__init__.py:44(compile)
-        6    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\enum.py:284(__call__)
-       56    0.000    0.000    0.000    0.000 {method 'acquire' of '_thread.RLock' objects}
+       10    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\genericpath.py:121(_splitext)
+       22    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\threading.py:75(RLock)
         1    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\tkinter\__init__.py:2033(_loadtk)
-       54    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\logging\__init__.py:736(filter)
-       27    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\threading.py:1225(current_thread)
-       10    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\tkinter\__init__.py:1379(_root)
-       46    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\tkinter\__init__.py:1695(__init__)
-       54    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\site-packages\bs4\builder\_htmlparser.py:297(prepare_markup)
-       27    0.000    0.000    0.000    0.000 {built-in method time.time}
-       27    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\threading.py:1064(name)
-       50    0.000    0.000    0.000    0.000 {built-in method builtins.repr}
-        1    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\tkinter\__init__.py:470(__init__)
-       28    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\ntpath.py:34(_get_bothseps)
-       28    0.000    0.000    0.000    0.000 {built-in method builtins.max}
-       54    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\site-packages\requests\models.py:815(content)
+        1    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\site-packages\soupsieve\__init__.py:44(compile)
+        9    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\html\parser.py:87(__init__)
+       24    0.000    0.000    0.000    0.000 {method 'globalgetvar' of '_tkinter.tkapp' objects}
+        9    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\ntpath.py:44(normcase)
+      256    0.000    0.000    0.000    0.000 {method 'copy' of 'dict' objects}
+        9    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\html\parser.py:96(reset)
+       22    0.000    0.000    0.000    0.000 {method 'createcommand' of '_tkinter.tkapp' objects}
+        5    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\enum.py:284(__call__)
         9    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\tkinter\__init__.py:342(set)
-      104    0.000    0.000    0.000    0.000 C:\Users\Media Markt\Desktop\Vita Online\LoL\runescrape\ChampionPage.py:107(__init__)
-       27    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\logging\__init__.py:360(getMessage)
-        3    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\tkinter\__init__.py:492(__init__)
+       32    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\site-packages\PIL\Image.py:587(_ensure_mutable)
+        9    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\encodings\cp1252.py:18(encode)
+        9    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\logging\__init__.py:579(formatMessage)
+        1    0.000    0.000    0.000    0.000 C:\Users\Media Markt\Desktop\Vita Online\LoL\runescrape\GUI.py:170(__init__)
+        1    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\tkinter\__init__.py:470(__init__)
         1    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\site-packages\soupsieve\css_match.py:444(__init__)
-        4    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\ntpath.py:75(join)
-       27    0.000    0.000    0.000    0.000 {built-in method sys._getframe}
-       16    0.000    0.000    0.000    0.000 {method 'getboolean' of '_tkinter.tkapp' objects}
-        1    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\site-packages\soupsieve\css_types.py:136(__init__)
-       31    0.000    0.000    0.000    0.000 {built-in method nt.getpid}
-        9    0.000    0.000    0.000    0.000 {method 'globalsetvar' of '_tkinter.tkapp' objects}
-        1    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\tkinter\__init__.py:1956(wm_protocol)
-        1    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\tkinter\__init__.py:367(trace_add)
-       27    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\_markupbase.py:36(reset)
-       54    0.000    0.000    0.000    0.000 {built-in method _thread.get_ident}
-        6    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\tkinter\__init__.py:1287(_getints)
-       44    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\tkinter\__init__.py:339(__str__)
-       28    0.000    0.000    0.000    0.000 {method 'rstrip' of 'str' objects}
-       27    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\multiprocessing\process.py:36(current_process)
-        1    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\tkinter\__init__.py:1212(bind)
-        6    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\enum.py:526(__new__)
-        5    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\threading.py:1092(is_alive)
-        1    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\_collections_abc.py:684(__eq__)
-        1    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\tkinter\__init__.py:1195(_bind)
-       46    0.000    0.000    0.000    0.000 {built-in method builtins.id}
-       27    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\multiprocessing\process.py:180(name)
-       27    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\site-packages\bs4\element.py:1338(__setitem__)
-       54    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\site-packages\bs4\__init__.py:186(deprecated_argument)
-       27    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\site-packages\bs4\builder\__init__.py:160(initialize_soup)
-        1    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\site-packages\soupsieve\css_types.py:92(__init__)
+        9    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\logging\__init__.py:573(usesTime)
+       40    0.000    0.000    0.000    0.000 C:\Users\Media Markt\Desktop\Vita Online\LoL\runescrape\ChampionPage.py:169(get_runes_set)
         4    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\site-packages\ipykernel\iostream.py:322(_schedule_flush)
-       54    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\site-packages\bs4\builder\__init__.py:168(reset)
-        4    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\tkinter\__init__.py:2792(get)
-        1    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\_collections_abc.py:664(__contains__)
-        1    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\tkinter\__init__.py:350(_register)
-       56    0.000    0.000    0.000    0.000 {method 'release' of '_thread.RLock' objects}
-        2    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:1009(_handle_fromlist)
-        1    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\os.py:674(__getitem__)
-        2    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\logging\__init__.py:212(_acquireLock)
+        3    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\tkinter\__init__.py:492(__init__)
+       18    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\logging\__init__.py:838(acquire)
+        9    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\logging\__init__.py:421(format)
+        5    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\threading.py:1092(is_alive)
+        9    0.000    0.000    0.000    0.000 {method 'globalsetvar' of '_tkinter.tkapp' objects}
+        5    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\tkinter\__init__.py:1287(_getints)
+        4    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\ntpath.py:75(join)
+        9    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\tkinter\__init__.py:1379(_root)
+       62    0.000    0.000    0.000    0.000 {method 'remove' of 'list' objects}
+        1    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\tkinter\__init__.py:1956(wm_protocol)
+        1    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\site-packages\soupsieve\css_types.py:136(__init__)
+        9    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\logging\__init__.py:154(<lambda>)
+        1    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\tkinter\__init__.py:367(trace_add)
+        9    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\site-packages\bs4\builder\__init__.py:121(__init__)
+        1    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\tkinter\__init__.py:1212(bind)
+        9    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\logging\__init__.py:418(usesTime)
+       14    0.000    0.000    0.000    0.000 {method 'getboolean' of '_tkinter.tkapp' objects}
+        1    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\tkinter\__init__.py:1195(_bind)
+        1    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\_collections_abc.py:684(__eq__)
+       25    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\site-packages\bs4\element.py:1708(children)
+        9    0.000    0.000    0.000    0.000 {built-in method _codecs.charmap_encode}
+        5    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\tkinter\__init__.py:2792(get)
+        9    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\logging\__init__.py:117(getLevelName)
+        9    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\html\parser.py:113(close)
         5    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\threading.py:1050(_wait_for_tstate_lock)
-        2    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\site-packages\soupsieve\css_match.py:187(get_children)
+        9    0.000    0.000    0.000    0.000 C:\Users\Media Markt\Desktop\Vita Online\LoL\runescrape\RequestsHandler.py:31(__init__)
+       20    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\tkinter\__init__.py:1695(__init__)
+       20    0.000    0.000    0.000    0.000 {method 'acquire' of '_thread.RLock' objects}
+        5    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\enum.py:526(__new__)
+       18    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\logging\__init__.py:845(release)
+        1    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\site-packages\soupsieve\css_types.py:92(__init__)
+       24    0.000    0.000    0.000    0.000 {built-in method builtins.repr}
+        1    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\tkinter\__init__.py:350(_register)
+        1    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\_collections_abc.py:664(__contains__)
+        9    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\threading.py:1225(current_thread)
+       18    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\site-packages\bs4\builder\_htmlparser.py:297(prepare_markup)
+       18    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\logging\__init__.py:736(filter)
+       32    0.000    0.000    0.000    0.000 C:\Users\Media Markt\Desktop\Vita Online\LoL\runescrape\ChampionPage.py:107(__init__)
+        9    0.000    0.000    0.000    0.000 {built-in method time.time}
         4    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\site-packages\ipykernel\iostream.py:309(_is_master_process)
+       10    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\ntpath.py:34(_get_bothseps)
+        9    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\threading.py:1064(name)
+        1    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\os.py:674(__getitem__)
+       13    0.000    0.000    0.000    0.000 {built-in method nt.getpid}
+        2    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\site-packages\soupsieve\css_match.py:187(get_children)
+        9    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\logging\__init__.py:360(getMessage)
+       10    0.000    0.000    0.000    0.000 {built-in method builtins.max}
+        2    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:1009(_handle_fromlist)
+       18    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\site-packages\requests\models.py:815(content)
+        5    0.000    0.000    0.000    0.000 {method 'acquire' of '_thread.lock' objects}
+        9    0.000    0.000    0.000    0.000 {built-in method sys._getframe}
+        9    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\_markupbase.py:36(reset)
+        5    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\site-packages\ipykernel\iostream.py:93(_event_pipe)
+        2    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\logging\__init__.py:212(_acquireLock)
+       10    0.000    0.000    0.000    0.000 {method 'rstrip' of 'str' objects}
+        9    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\multiprocessing\process.py:36(current_process)
+       20    0.000    0.000    0.000    0.000 {built-in method builtins.id}
+        9    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\site-packages\bs4\element.py:1338(__setitem__)
         2    0.000    0.000    0.000    0.000 {method 'getvar' of '_tkinter.tkapp' objects}
+        1    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:416(parent)
+       18    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\tkinter\__init__.py:339(__str__)
+        9    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\multiprocessing\process.py:180(name)
+       18    0.000    0.000    0.000    0.000 {built-in method _thread.get_ident}
         2    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\_collections_abc.py:742(__iter__)
+       18    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\site-packages\bs4\__init__.py:186(deprecated_argument)
         1    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\site-packages\soupsieve\css_match.py:80(assert_valid_input)
         1    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\os.py:744(encodekey)
-        5    0.000    0.000    0.000    0.000 {method 'acquire' of '_thread.lock' objects}
-        1    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:416(parent)
-        2    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\logging\__init__.py:221(_releaseLock)
-        2    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\_collections_abc.py:676(items)
-        5    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\site-packages\ipykernel\iostream.py:93(_event_pipe)
+        9    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\site-packages\bs4\builder\__init__.py:160(initialize_soup)
         1    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\site-packages\soupsieve\css_match.py:281(has_html_ns)
+       20    0.000    0.000    0.000    0.000 {method 'release' of '_thread.RLock' objects}
+        2    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\_collections_abc.py:676(items)
+       18    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\site-packages\bs4\builder\__init__.py:168(reset)
         7    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\site-packages\soupsieve\css_types.py:317(__len__)
        18    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\site-packages\soupsieve\css_types.py:322(__getitem__)
         2    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\site-packages\soupsieve\css_types.py:106(__iter__)
-        2    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\logging\__init__.py:1600(getEffectiveLevel)
         1    0.000    0.000    0.000    0.000 {built-in method PIL._imagingtk.tkinit}
+        2    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\logging\__init__.py:221(_releaseLock)
+        5    0.000    0.000    0.000    0.000 {method 'splitlist' of '_tkinter.tkapp' objects}
+        5    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\threading.py:507(is_set)
         7    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\site-packages\soupsieve\css_match.py:237(get_parent)
+        5    0.000    0.000    0.000    0.000 {method 'append' of 'collections.deque' objects}
+        2    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\logging\__init__.py:1600(getEffectiveLevel)
         7    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\site-packages\soupsieve\css_match.py:959(match_contains)
         1    0.000    0.000    0.000    0.000 {built-in method builtins.sorted}
+        2    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\_collections_abc.py:698(__init__)
         1    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\site-packages\soupsieve\css_match.py:156(is_xml_tree)
         7    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\site-packages\soupsieve\css_match.py:669(match_attributes)
-        2    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\_collections_abc.py:698(__init__)
-        5    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\threading.py:507(is_set)
         1    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\os.py:738(check_str)
-        5    0.000    0.000    0.000    0.000 {method 'append' of 'collections.deque' objects}
-        1    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\site-packages\soupsieve\css_types.py:120(__hash__)
-        4    0.000    0.000    0.000    0.000 {method 'splitlist' of '_tkinter.tkapp' objects}
-        1    0.000    0.000    0.000    0.000 {method 'upper' of 'str' objects}
-        2    0.000    0.000    0.000    0.000 {built-in method builtins.all}
-        1    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\site-packages\soupsieve\css_types.py:144(<listcomp>)
         1    0.000    0.000    0.000    0.000 {method 'rpartition' of 'str' objects}
+        1    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\site-packages\soupsieve\css_types.py:120(__hash__)
+        2    0.000    0.000    0.000    0.000 {built-in method builtins.all}
         1    0.000    0.000    0.000    0.000 {method 'disable' of '_lsprof.Profiler' objects}
-        1    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\site-packages\soupsieve\css_types.py:104(<listcomp>)
-        1    0.000    0.000    0.000    0.000 {built-in method builtins.hash}
         1    0.000    0.000    0.000    0.000 {method 'interpaddr' of '_tkinter.tkapp' objects}
+        1    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\site-packages\soupsieve\css_types.py:144(<listcomp>)
+        1    0.000    0.000    0.000    0.000 {built-in method builtins.hash}
         1    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\site-packages\soupsieve\css_types.py:98(<listcomp>)
+        1    0.000    0.000    0.000    0.000 C:\ProgramData\Anaconda3\lib\site-packages\soupsieve\css_types.py:104(<listcomp>)
+        1    0.000    0.000    0.000    0.000 {method 'upper' of 'str' objects}
 
 

@@ -31,6 +31,7 @@ class StoneRow:
 
     def __init__(self, rune_row):
         self.rune_row = rune_row
+    
 
 
     def get_stones(self):
