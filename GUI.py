@@ -23,7 +23,7 @@ def strfy_day_difference(n_days):
     elif n_days == 1:
         return "Yesterday"
     elif n_days <= 7:
-        return f"{n_days} ago"
+        return f"{n_days} days ago"
     elif n_days <= 14:
         return "Last week"
     elif n_days <= 30:
